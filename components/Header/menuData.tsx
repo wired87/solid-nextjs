@@ -16,7 +16,7 @@ const menuData: Menu[] = [
         id: 34,
         title: "Mobile-App-Entwicklung",
         newTab: false,
-        path: "/auth/signin",
+        path: "/mobile",
       },
       {
         id: 354,
@@ -88,7 +88,7 @@ const menuData: Menu[] = [
         id: 13112,
         title: "Kontakt",
         newTab: false,
-        path: "/chatbot",
+        path: "/contact",
       },
     ]
   },

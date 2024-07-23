@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import {ReactNode, useState} from "react";
+import React, {ReactNode, useState} from "react";
+import Link from "next/link";
 
 interface HeroT {
   smallHeading: string;
@@ -44,7 +45,15 @@ const Hero: React.FC<HeroT> = (
       return actionButtonSection
     }
     return(
-      <form onSubmit={handleSubmit}>
+      <Link
+        href="/contact"
+        className="flex h-12 flex-row items-center rounded-xl bg-primary px-6 text-base font-bold
+						text-gray-100 transition hover:scale-105 hover:brightness-125 active:opacity-80"
+      >
+        Kontakt
+      </Link>
+      /*
+       <form onSubmit={handleSubmit}>
         <div className="flex flex-wrap gap-5">
           <input
             value={email}
@@ -61,6 +70,7 @@ const Hero: React.FC<HeroT> = (
           </button>
         </div>
       </form>
+       */
     )
   }
 

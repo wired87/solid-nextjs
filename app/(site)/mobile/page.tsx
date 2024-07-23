@@ -4,8 +4,8 @@ import Image from "next/image";
 import SectionHeader from "@/components/Common/SectionHeader";
 import React from "react";
 import FeaturesTab from "@/components/FeaturesTab";
-import {SingleSectionTL} from "@/components/About/SingleSection";
 import CTA from "@/components/CTA";
+import {mobileTabData} from "@/components/FeaturesTab/featuresTabData";
 
 export const metadata: Metadata = {
   title: "UI/UX Design",
@@ -61,6 +61,7 @@ const Mobile = () => {
           titleOne={"Android"}
           titleTwo={"IOS"}
           titleThree={"Cross Plattform"}
+          data={mobileTabData}
       />
       <CTA />
     </>

@@ -54,7 +54,7 @@ const CTA = () => {
               <div className="flex items-center justify-end xl:justify-between">
                 <div className={"w-[300px] h-[150px] hidden xl:block"}></div>
                 <a
-                  href="signup.html"
+                  href="/contact"
                   className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white hover:opacity-90 dark:bg-white dark:text-black"
                 >
                   Projekt besprechen

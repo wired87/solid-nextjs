@@ -23,6 +23,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'i.pinimg.com',
         pathname: '/**',// wp-content/uploads/2020/07/' // Adjust the path if needed based on your image URLs
+      },{
+        protocol: 'https',
+        hostname: 'cdn.prod.website-files.com',
+        pathname: '/**',// wp-content/uploads/2020/07/' // Adjust the path if needed based on your image URLs
       },
     ],
   },

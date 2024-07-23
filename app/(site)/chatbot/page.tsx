@@ -1,10 +1,9 @@
-import Image from "next/image"
 import { Metadata } from "next";
 import FAQ from "@/components/FAQ";
 import {botFaqData} from "@/components/FAQ/faqData";
-import Link from "next/link";
 import ChatBotNeed from "@/components/ChatBot/WhyWe";
 import Hero from "@/components/ChatBot/Hero";
+
 export const metadata: Metadata = {
   title: "Blog Page - Solid SaaS Boilerplate",
   description: "This is Blog page for Solid Pro",
