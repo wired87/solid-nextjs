@@ -14,7 +14,7 @@ const Feature = () => {
           <SectionHeader
             headerInfo={{
               title: "SOLID FEATURES",
-              subtitle: "Core Features of Solid",
+              subtitle: "Unsere Spezialgebiete",
               description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
             convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
             ante in maximus.`,

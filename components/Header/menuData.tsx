@@ -3,77 +3,115 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Home",
-    newTab: false,
-    path: "/",
-  },
-  {
-    id: 2,
-    title: "Features",
-    newTab: false,
-    path: "/#features",
-  },
-  {
-    id: 2.1,
-    title: "Blog",
-    newTab: false,
-    path: "/blog",
-  },
-  {
-    id: 2.3,
-    title: "Docs",
-    newTab: false,
-    path: "/docs",
-  },
-  {
-    id: 3,
-    title: "Pages",
+    title: "Frontend",
     newTab: false,
     submenu: [
       {
         id: 31,
-        title: "Blog Grid",
+        title: "Web-Entwicklung",
         newTab: false,
         path: "/blog",
       },
       {
         id: 34,
-        title: "Sign In",
+        title: "Mobile-App-Entwicklung",
         newTab: false,
         path: "/auth/signin",
       },
       {
         id: 35,
-        title: "Sign Up",
+        title: "UI/UX-Design",
         newTab: false,
         path: "/auth/signup",
       },
+    ]
+  },
+  {
+    id: 2,
+    title: "Backend",
+    newTab: false,
+    submenu: [
+      {
+        id: 31111111,
+        title: "Backend Development",
+        newTab: false,
+        path: "/blog",
+      },
+      {
+        id: 31,
+        title: "Datenbank Management",
+        newTab: false,
+        path: "/blog",
+      },
+      {
+        id: 34,
+        title: "Cloud Infrastruktur",
+        newTab: false,
+        path: "/auth/signin",
+      },
       {
         id: 35,
-        title: "Docs",
+        title: "API Entwicklung und Integration",
         newTab: false,
-        path: "/docs",
+        path: "/auth/signup",
+      },
+    ]
+  },
+  {
+    id: 49,
+    title: "Mobile",
+    newTab: false,
+    submenu: [
+      {
+        id: 222,
+        title: "IOS",
+        newTab: false,
+        path: "/blog",
       },
       {
-        id: 35.1,
-        title: "Support",
+        id: 332,
+        title: "Android",
         newTab: false,
-        path: "/support",
+        path: "/auth/signin",
       },
       {
-        id: 36,
-        title: "404",
+        id: 112,
+        title: "React Native (cross plattform)",
         newTab: false,
-        path: "/error",
+        path: "/auth/signup",
       },
-    ],
+    ]
+  },{
+    id: 331,
+    title: "KI",
+    newTab: false,
+    submenu: [
+      {
+        id: 2212,
+        title: "KI-Entwicklung",
+        newTab: false,
+        path: "/blog",
+      },
+      {
+        id: 3312,
+        title: "Automatisierung",
+        newTab: false,
+        path: "/auth/signin",
+      },
+      {
+        id: 1112,
+        title: "Chat Bots",
+        newTab: false,
+        path: "/chatbot",
+      },
+    ]
   },
 
   {
-    id: 4,
-    title: "Support",
+    id: 2.3,
+    title: "Unternehmen",
     newTab: false,
-    path: "/support",
+    path: "/docs",
   },
 ];
 

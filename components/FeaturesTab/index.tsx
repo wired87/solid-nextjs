@@ -6,12 +6,26 @@ import featuresTabData from "./featuresTabData";
 
 import { motion } from "framer-motion";
 
-const FeaturesTab = () => {
+interface ItemT {
+  title: string;
+}
+
+interface FTT {
+  titleOne: string;
+  titleTwo: string;
+  titleThree: string;
+}
+const FeaturesTab: React.FC<FTT> = (
+  {
+    titleOne,
+    titleTwo,
+    titleThree
+  }
+) => {
   const [currentTab, setCurrentTab] = useState("tabOne");
 
   return (
     <>
-      {/* <!-- ===== Features Tab Start ===== --> */}
       <section className="relative pb-20 pt-18.5 lg:pb-22.5">
         <div className="relative mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="absolute -top-16 -z-1 mx-auto h-[350px] w-[90%]">
@@ -29,7 +43,7 @@ const FeaturesTab = () => {
             />
           </div>
 
-          {/* <!-- Tab Menues Start --> */}
+
           <motion.div
             variants={{
               hidden: {
@@ -63,7 +77,7 @@ const FeaturesTab = () => {
               </div>
               <div className="md:w-3/5 lg:w-auto">
                 <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                  Clean User Interface
+                  {titleOne}
                 </button>
               </div>
             </div>
@@ -82,7 +96,7 @@ const FeaturesTab = () => {
               </div>
               <div className="md:w-3/5 lg:w-auto">
                 <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                  Essential Business Pages
+                  {titleTwo}
                 </button>
               </div>
             </div>
@@ -101,14 +115,12 @@ const FeaturesTab = () => {
               </div>
               <div className="md:w-3/5 lg:w-auto">
                 <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                  Fully Functional Integrations
+                  {titleThree}
                 </button>
               </div>
             </div>
           </motion.div>
-          {/* <!-- Tab Menues End --> */}
 
-          {/* <!-- Tab Content Start --> */}
           <motion.div
             variants={{
               hidden: {

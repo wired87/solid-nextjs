@@ -1,18 +1,19 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type HeaderInfo = {
   title: string;
   subtitle: string;
   description: string;
+  link?: boolean;
 };
 
 const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
-  const { title, subtitle, description } = headerInfo;
+  const { title, subtitle, description, link } = headerInfo;
 
   return (
     <>
-      {/* <!-- Section Title Start --> */}
       <motion.div
         variants={{
           hidden: {
@@ -41,7 +42,6 @@ const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
         </h2>
         <p className="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%]">{description}</p>
       </motion.div>
-      {/* <!-- Section Title End --> */}
     </>
   );
 };
