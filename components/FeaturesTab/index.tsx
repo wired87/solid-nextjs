@@ -1,14 +1,11 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import React, { useState } from "react";
 import FeaturesTabItem from "./FeaturesTabItem";
-import featuresTabData from "./featuresTabData";
+import mobileTabData from "./featuresTabData";
 
 import { motion } from "framer-motion";
 
-interface ItemT {
-  title: string;
-}
 
 interface FTT {
   titleOne: string;
@@ -139,7 +136,7 @@ const FeaturesTab: React.FC<FTT> = (
             viewport={{ once: true }}
             className="animate_top mx-auto max-w-c-1154"
           >
-            {featuresTabData.map((feature, key) => (
+            {mobileTabData.map((feature, key) => (
               <div
                 className={feature.id === currentTab ? "block" : "hidden"}
                 key={key}

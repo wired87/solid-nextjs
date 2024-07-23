@@ -3,7 +3,7 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Frontend",
+    title: "Dienstleistungen",
     newTab: false,
     submenu: [
       {
@@ -19,29 +19,20 @@ const menuData: Menu[] = [
         path: "/auth/signin",
       },
       {
-        id: 35,
+        id: 354,
         title: "UI/UX-Design",
         newTab: false,
         path: "/auth/signup",
-      },
-    ]
-  },
-  {
-    id: 2,
-    title: "Backend",
-    newTab: false,
-    submenu: [
-      {
-        id: 31111111,
-        title: "Backend Development",
+      },{
+        id: 335,
+        title: "MVP Entwicklung",
         newTab: false,
-        path: "/blog",
-      },
-      {
-        id: 31,
-        title: "Datenbank Management",
+        path: "/auth/signup",
+      },{
+        id: 335,
+        title: "Individual Software Entwicklung",
         newTab: false,
-        path: "/blog",
+        path: "/auth/signup",
       },
       {
         id: 34,
@@ -58,52 +49,23 @@ const menuData: Menu[] = [
     ]
   },
   {
-    id: 49,
-    title: "Mobile",
+    id: 2,
+    title: "KI - Dienstleistungen",
     newTab: false,
     submenu: [
       {
-        id: 222,
-        title: "IOS",
+        id: 31111111,
+        title: "Support Agents",
         newTab: false,
         path: "/blog",
       },
       {
-        id: 332,
-        title: "Android",
-        newTab: false,
-        path: "/auth/signin",
-      },
-      {
-        id: 112,
-        title: "React Native (cross plattform)",
-        newTab: false,
-        path: "/auth/signup",
-      },
-    ]
-  },{
-    id: 331,
-    title: "KI",
-    newTab: false,
-    submenu: [
-      {
-        id: 2212,
-        title: "KI-Entwicklung",
+        id: 31,
+        title: "KI - Entwicklung und Integration",
         newTab: false,
         path: "/blog",
       },
-      {
-        id: 3312,
-        title: "Automatisierung",
-        newTab: false,
-        path: "/auth/signin",
-      },
-      {
-        id: 1112,
-        title: "Chat Bots",
-        newTab: false,
-        path: "/chatbot",
-      },
+
     ]
   },
 
@@ -111,7 +73,24 @@ const menuData: Menu[] = [
     id: 2.3,
     title: "Unternehmen",
     newTab: false,
-    path: "/docs",
+    submenu: [
+      {
+        id: 13112,
+        title: "Über uns",
+        newTab: false,
+        path: "/chatbot",
+      },{
+        id: 13112,
+        title: "Karriere",
+        newTab: false,
+        path: "/chatbot",
+      },{
+        id: 13112,
+        title: "Kontakt",
+        newTab: false,
+        path: "/chatbot",
+      },
+    ]
   },
 ];
 

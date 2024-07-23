@@ -11,6 +11,19 @@ const nextConfig = {
         hostname: "cdn.sanity.io",
         port: "",
       },
+      {
+        protocol: 'https',
+        hostname: 'images.mockupcloud.com',
+        pathname: '/**',// wp-content/uploads/2020/07/' // Adjust the path if needed based on your image URLs
+      },{
+        protocol: 'https',
+        hostname: 'unblast.com',
+        pathname: '/**',// wp-content/uploads/2020/07/' // Adjust the path if needed based on your image URLs
+      },{
+        protocol: 'https',
+        hostname: 'i.pinimg.com',
+        pathname: '/**',// wp-content/uploads/2020/07/' // Adjust the path if needed based on your image URLs
+      },
     ],
   },
 };

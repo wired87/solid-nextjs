@@ -38,9 +38,6 @@ const ImageSection = () => {
 
 const Mobile = () => {
 
-
-
-
   return(
     <>
       <Hero
@@ -48,7 +45,7 @@ const Mobile = () => {
         mainHeading={"Entwicklung maßgeschneiderter mobiler Anwendungen"}
         explanationOrComponent={"Wir garantieren zeitgemäße und voll funktionsfähige mobile Anwendungen, die den Anforderungen des Marktes und Ihnen als Kunden gerecht werden."}
         actionButtonSection={<MobileAction />}
-        endingText={"Überzeugen Sie sich selbst!"}
+        endingText={""}
         imageOrSection={<ImageSection />}
       />
       <div className="animate_top mx-auto text-center">
