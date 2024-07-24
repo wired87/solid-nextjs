@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import {Chip} from "@nextui-org/chip";
-function getRandomTailwindColor() {
+function getRandomTailwindColor(): any  {
   const colors = [
     "default",
     "primary",
@@ -14,11 +14,9 @@ function getRandomTailwindColor() {
     "danger",
       ];
 
+  const randomIndex = Math.floor(Math.random() * colors.length);
+  return colors[randomIndex];
 
-  let randomColor: "default" | "primary" | "secondary" | "success" | "warning" | "danger" | undefined;
-  randomColor = colors[Math.floor(Math.random() * colors.length)];
-
-  return randomColor
 }
 const BlogItem = ({ blog }: { blog: B }) => {
   const { mainImage, title, metadata, tags } = blog;
