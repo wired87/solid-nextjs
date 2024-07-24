@@ -8,6 +8,7 @@ import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
 import Testimonial from "@/components/Testimonial";
 import {homeFeaturesData} from "@/components/Features/featuresData";
+import {factDataHome} from "@/components/FunFact/factData";
 
 export const metadata: Metadata = {
   title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
@@ -27,7 +28,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <FunFact />
+      <FunFact data={factDataHome}/>
       <Feature data={homeFeaturesData} headerInfo={headerInfo}/>
       <CTA />
 

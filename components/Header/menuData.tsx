@@ -27,7 +27,7 @@ const menuData: Menu[] = [
         id: 335,
         title: "MVP Entwicklung",
         newTab: false,
-        path: "/auth/signup",
+        path: "/mvp",
       },/*{
         id: 335,
         title: "Individual Software Entwicklung",

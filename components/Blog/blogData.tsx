@@ -1,6 +1,6 @@
-import { Blog } from "@/types/blog";
+import { B } from "@/types/blog";
 
-const BlogData: Blog[] = [
+const BlogData: B[] = [
   {
     _id: 1,
     mainImage: "/images/blog/blog-01.png",
@@ -46,3 +46,51 @@ const BlogData: Blog[] = [
 ];
 
 export default BlogData;
+
+export const teamData: B[] = [
+  {
+    _id: 1,
+    mainImage: "/images/trust/bene_bg.png",
+    title: "Benedikt Sterra",
+    metadata: "Geschäftsführer",
+    tags: [
+      "TypeScript",
+      "Mobile Entwicklung",
+      "PyTorch",
+      "Kotlin",
+      "Python",
+      "React"
+    ]
+  },
+  {
+    _id: 2,
+    mainImage: "/images/trust/hammad.png",
+    title: "Hammad Shahzad",
+    metadata:
+      "CTO",
+    tags: [
+      "Chat Bot Experte",
+      "KI-Experte",
+      "PyTorch",
+      "Python",
+      "TypeScript",
+      "React"
+    ]
+  },{
+    _id: 3,
+    mainImage: "/images/trust/felix.png",
+    title: "Felix Izere",
+    metadata:
+      "CTO",
+    tags: [
+      "Design",
+      "React",
+      "TypeScript",
+      "AI Experte",
+      "TypeScript",
+      "React"
+    ]
+  },
+
+];
+

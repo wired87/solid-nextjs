@@ -110,7 +110,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/mvp"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         MVP Entwicklung

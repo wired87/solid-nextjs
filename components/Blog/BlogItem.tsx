@@ -1,11 +1,27 @@
 "use client";
-import { Blog } from "@/types/blog";
+import { B } from "@/types/blog";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import {Chip} from "@nextui-org/chip";
+function getRandomTailwindColor() {
+  const colors = [
+    "default",
+    "primary",
+    "secondary",
+    "success",
+    "warning",
+    "danger",
+      ];
 
-const BlogItem = ({ blog }: { blog: Blog }) => {
-  const { mainImage, title, metadata } = blog;
+
+  let randomColor: "default" | "primary" | "secondary" | "success" | "warning" | "danger" | undefined;
+  randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+  return randomColor
+}
+const BlogItem = ({ blog }: { blog: B }) => {
+  const { mainImage, title, metadata, tags } = blog;
 
   return (
     <>
@@ -28,7 +44,7 @@ const BlogItem = ({ blog }: { blog: Blog }) => {
         className="animate_top rounded-lg bg-white p-4 pb-9 shadow-solid-8 dark:bg-blacksection"
       >
         <Link href={`/blog/`} className="relative block aspect-[368/239]">
-          <Image src={mainImage} alt={title} fill />
+          <Image src={mainImage} alt={title} className={"object-contain"} fill />
         </Link>
 
         <div className="px-4">
@@ -38,7 +54,11 @@ const BlogItem = ({ blog }: { blog: Blog }) => {
             </Link>
           </h3>
           <p className="line-clamp-3">{metadata}</p>
+          {tags?.map((item, i)=> (
+            <Chip className={"text-white my-2 mx-1.5 px-2 py-1 text-xs"} color={"primary"} key={i}>{item}</Chip>
+          ))}
         </div>
+
       </motion.div>
     </>
   );

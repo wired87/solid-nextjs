@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section className="mt-30 flex h-full flex-col items-center justify-center bg-black py-15">
+    <section className="mt-20 flex flex-col items-center justify-center bg-black py-15">
       <div className="relative flex flex-col items-center">
         <Image
           src="/images/bot_hero/cal.svg"
@@ -69,15 +69,15 @@ export default function Hero() {
               className="bg-clip-text
 							text-primary transition hover:brightness-125"
             >
-              Erhalte deinen
+              Ihr eigener
             </span>{" "}
-            eigenen
+            Support Agent
           </h1>
           <h1
             className="bg-gradient-to-b from-gray-200 to-gray-400 bg-clip-text text-8xl
 						font-bold text-transparent transition hover:brightness-125"
           >
-            Support Agenten
+
           </h1>
         </div>
         <div className="mb-8" />

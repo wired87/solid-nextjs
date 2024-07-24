@@ -3,6 +3,9 @@ import FAQ from "@/components/FAQ";
 import {botFaqData} from "@/components/FAQ/faqData";
 import ChatBotNeed from "@/components/ChatBot/WhyWe";
 import Hero from "@/components/ChatBot/Hero";
+import CTA from "@/components/CTA";
+import React from "react";
+import SectionHeader from "@/components/Common/SectionHeader";
 
 export const metadata: Metadata = {
   title: "Blog Page - Solid SaaS Boilerplate",
@@ -12,28 +15,31 @@ export const metadata: Metadata = {
 
 const ChatBotMain = async () => {
 
-
+  const heading = {
+    title: "Was macht ein support Agent?",
+    subtitle: "",
+    description: "",
+    link: false,
+  }
   return (
     <>
       <Hero />
-    <section className="w-full relative bg-reply-bg overflow-hidden flex flex-col items-start justify-start text-center text-15xl text-black font-h5">
-      <div className="self-stretch bg-reply-bg flex flex-col items-start justify-start p-[100px] gap-[64px] lg:p-16 lg:box-border md:p-8 md:box-border sm:pl-4 sm:pr-4 sm:box-border">
-
-        <div className="self-stretch flex flex-col items-center justify-center">
-          <b className="self-stretch relative leading-[30px] md:text-5xl">
-            Entdecke unsere integrationen
-          </b>
-        </div>
-        <ChatBotNeed />
-        <FAQ data={botFaqData} />
-
+      <SectionHeader  headerInfo={heading}/>
+       <div className="self-stretch flex flex-col items-center justify-center">
+        <b className="self-stretch relative leading-[30px] md:text-5xl">
+        </b>
       </div>
-    </section>
+      <ChatBotNeed />
+      <CTA />
+
+      <FAQ data={botFaqData} />
+
+
     </>
   );
 };
-
 export default ChatBotMain;
+
 /*
 <PartnerSection />
 

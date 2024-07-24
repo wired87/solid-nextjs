@@ -2,6 +2,7 @@ import {motion} from "framer-motion";
 import Image from "next/image";
 import {AboutSingleT} from "@/types/about";
 import React, {ReactNode} from "react";
+import { FaCheck } from "react-icons/fa";
 
 const getImageSec = (imageSec: ReactNode | string) => {
   if (imageSec) {
@@ -30,14 +31,18 @@ const getImageSec = (imageSec: ReactNode | string) => {
     </>
   )
 }
-const getPoints = (points: string[] | undefined) => {
+export const getPoints = (points: string[] | undefined) => {
+  console.log("POINTS:", points?.length);
   if (points?.length) {
     return(
-      <ul>
+      <ul className={"grid grid-cols-2 gap-4 list-none text-left p-0 mt-5"}>
         {points.map((item:string, i:number) => (
-          <li key={i}>
-            {item}
-          </li>
+          <div className={"flex-row flex gap-4"}>
+            <FaCheck size={18} color={"green"}/>
+            <li key={i} className={"dark:text-white text-black"}>
+              {item}
+            </li>
+          </div>
         ))}
       </ul>
     )
@@ -77,7 +82,7 @@ export const SingleSectionTR: React.FC<AboutSingleT> = (
             whileInView="visible"
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
-            className="animate_left relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
+            className="animate_left bg-red relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
           >
             {
               getImageSec(imageSec)
@@ -99,19 +104,19 @@ export const SingleSectionTR: React.FC<AboutSingleT> = (
             whileInView="visible"
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
-            className="animate_right md:w-1/2"
+            className="animate_right md:w-1/2 min-w-[500px]"
           >
-              <span className="font-medium uppercase text-black dark:text-white">
-                <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
+              <span className="font-medium text-left uppercase text-black dark:text-white">
+                <span className="mb-4 text-left mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
                   {headingOne}
-                </span>{" "}
+                </span>
               </span>
-            <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-              <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
+            <h2 className="relative text-left mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
+              <span className="relative text-left inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
                   {headingTwo}
                 </span>
             </h2>
-            <p>
+            <p className={"dark:text-white text-black text-left"}>
               {exp}
             </p>
             {
@@ -136,7 +141,7 @@ export const SingleSectionTL: React.FC<AboutSingleT> = (
   return(
     <section>
       <div className="mx-auto max-w-c-1235 overflow-hidden px-4 md:px-8 2xl:px-0">
-        <div className="flex items-center gap-8 lg:gap-32.5">
+        <div className="flex items-center justify-between gap-8 lg:gap-32.5">
           <motion.div
             variants={{
               hidden: {
@@ -155,15 +160,15 @@ export const SingleSectionTL: React.FC<AboutSingleT> = (
             viewport={{ once: true }}
             className="animate_left md:w-1/2"
           >
-            <h4 className="font-medium uppercase text-black dark:text-white">
+            <h4 className="font-medium text-left uppercase text-black dark:text-white">
               {headingOne}
             </h4>
-            <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-              <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark">
+            <h2 className="relative text-left mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
+              <span className="relative text-left inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark">
                   {headingTwo}
                 </span>
             </h2>
-            <p>
+            <p className={"dark:text-white text-left text-black"}>
               {exp}
             </p>
             {

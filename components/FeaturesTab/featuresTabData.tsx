@@ -87,3 +87,57 @@ export const webTabData: FeatureTab[] = [
   },
 ];
 
+
+
+export const aiTabData: FeatureTab[] = [
+  {
+    id: "tabOne",
+    title: "KI Modellierung",
+    desc1: '\n' +
+      'Sie haben eine Idee, die Machine Learning (ML) erfordert? Wir sind Ihr Partner für die ' +
+      'erfolgreiche Umsetzung! Von der Idee bis zum einsatzbereiten ML-Modell – wir begleiten ' +
+      'Sie mit unserer bewährten Expertise.',
+    desc2: [
+      "Datenaufbereitung & -analyse",
+      "Algorithmus- & Modellentwicklung",
+      "Test & Evaluierung",
+      "Feinabstimmung (Fine tuning) & Optimierung"
+    ],
+    image: "/images/brand/torch.svg",// <FeaturesTabCarousel img={crmImg} /> ,
+    imageDark: "/images/brand/torch.svg",
+  },
+  {
+    id: "tabTwo",
+    title: "KI Produktentwicklung",
+    desc1: "Wir entwickeln effiziente und zuverlässige KI-Lösungen, damit Sie sich auf Ihr " +
+      "Kerngeschäft konzentrieren können.",
+    desc2: [
+      "KI-Infrastruktur",
+      "Prozessautomatisierung",
+      "Kontinuierliche Verbesserung",
+      "Echtzeit-Verarbeitung",
+
+    ],
+    image: "https://elements-cover-images-0.imgix.net/804e48d0-c49f-4c35-9d56-f92803e4c65d?auto=compress%2Cformat&w=1370&fit=max&s=abbcf3f437553c2a5eb4b9905b9f2fab", // <FeaturesTabCarousel img={webImg} />,
+    imageDark: "https://elements-cover-images-0.imgix.net/804e48d0-c49f-4c35-9d56-f92803e4c65d?auto=compress%2Cformat&w=1370&fit=max&s=abbcf3f437553c2a5eb4b9905b9f2fab",
+  },
+  {
+    id: "tabThree",
+    title: "Integration",
+    desc1: "Wir integrieren nicht nur unsere eigene Software in Ihre systeme sondern haben uns über die letzten Jahre ein " +
+      "Netzwerk von Partnertools aufgebaut welches es uns ermöglicht Ihnen einen Großteil der vorhandenen Services auf " +
+      "dem Mark anbieten zu können",
+    desc2: [
+      "Maßgeschneiderte KI-Modelle",
+      "Datenanalyse & -visualisierung",
+      "Bildverarbeitung",
+      "Support Agenten",
+      "Natürliche Sprachverarbeitung (NLP)",
+      "Gesichtserkennung",
+      "Und vieles mehr..."
+    ],
+    image: "https://cdn-kafip.nitrocdn.com/HjvsLFBjOHoXPlmiShNfCTokNaxBPUJI/assets/images/optimized/rev-b891204/ultraconsultants.com/wp-content/uploads/2024/03/ai-in-erp.jpg", // <FeaturesTabCarousel img={shopImg}/>,
+    imageDark: "https://cdn-kafip.nitrocdn.com/HjvsLFBjOHoXPlmiShNfCTokNaxBPUJI/assets/images/optimized/rev-b891204/ultraconsultants.com/wp-content/uploads/2024/03/ai-in-erp.jpg",
+  },
+];
+

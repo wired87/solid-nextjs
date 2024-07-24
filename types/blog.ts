@@ -6,7 +6,7 @@ export type Author = {
   _ref?: number | string;
 };
 
-export type Blog = {
+export type B = {
   _id: number;
   title: string;
   slug?: any;

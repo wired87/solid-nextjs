@@ -1,9 +1,67 @@
 "use client";
-import React from "react";
+
+import React, {ReactNode} from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import {getPoints} from "@/components/About/SingleSection";
 
-const CTA = () => {
+interface CTAT {
+  heading?: string;
+  des?: string | string[];
+  image?: ReactNode;
+  btnText?: string;
+  href?: string;
+}
+
+const validateProps = (heading,
+                       des,
+                       image,
+                       btnText,
+                       href
+) => {
+  if (!heading || !des || !image || !btnText) {
+    return {
+      heading: "Wie können wir helfen?",
+      des: "Vereinbaren Sie ein unverbindliches Erstgespräch mit einem unserer Experten.",
+      image: <Image
+        width={210}
+        height={300}
+        src="/images/trust/bene_bg.png"
+        alt="Arrow"
+        className=""
+      />,
+      btnText: "Projekt besprechen",
+      href: "/contact"
+    }
+  } else {
+    let desComp: ReactNode;
+    if (Array.isArray(des)) {
+      desComp = getPoints(des);
+    } else {
+      desComp = <p className={"text-black dark:text-white text-lefts"}>{des}</p>
+    }
+    return {
+      heading: heading,
+      des: desComp,
+      image:image,
+      btnText: btnText,
+      href: href
+    }
+  }
+}
+
+const CTA: React.FC<CTAT> = (
+  {
+    heading,
+    des,
+    image,
+    btnText,
+    href
+  }
+) => {
+
+  const r = validateProps(heading, des, image, btnText, href)
+
   return (
       <section className="overflow-hidden px-4 py-20 md:px-8 lg:py-25 xl:py-30 2xl:px-0">
         <div className="mx-auto max-w-c-1390 rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] px-7.5 py-12.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark md:px-12.5 xl:px-17.5 xl:py-0">
@@ -27,11 +85,9 @@ const CTA = () => {
               className="animate_left md:w-[70%] lg:w-1/2"
             >
               <h2 className="mb-4 w-11/12 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle4">
-                Wie können wir helfen?
+                {r.heading}
               </h2>
-              <p>
-                Vereinbaren Sie ein unverbindliches Erstgespräch mit einem unserer Experten.
-              </p>
+              {r.des}
             </motion.div>
 
             <motion.div
@@ -54,21 +110,18 @@ const CTA = () => {
             >
 
               <div className="flex items-center justify-end xl:justify-between">
-
                 <div className={"w-[300px] my-10 h-[150px] xl:block"}>
-                  <Image
-                    width={210}
-                    height={300}
-                    src="/images/trust/bene_bg.png"
-                    alt="Arrow"
-                    className=""
-                  />
+                  {
+                    r.image
+                  }
                 </div>
                 <a
-                  href="/contact"
+                  href={r.href}
                   className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white hover:opacity-90 dark:bg-white dark:text-black"
                 >
-                  Projekt besprechen
+                  {
+                    r.btnText
+                  }
                   <Image
                     width={20}
                     height={20}
@@ -89,7 +142,6 @@ const CTA = () => {
           </div>
         </div>
       </section>
-
   );
 };
 
