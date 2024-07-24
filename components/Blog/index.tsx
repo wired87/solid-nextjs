@@ -4,10 +4,12 @@ import BlogItem from "./BlogItem";
 import { B } from "@/types/blog";
 interface BlogT {
   data: B[];
+  headerInfo
 }
 const Blog: React.FC<BlogT> = (
   {
-    data
+    data,
+    headerInfo
   }
 ) => {
 
@@ -25,11 +27,7 @@ const Blog: React.FC<BlogT> = (
         {/* <!-- Section Title Start --> */}
         <div className="animate_top mx-auto text-center">
           <SectionHeader
-            headerInfo={{
-              title: `Unser Team`,
-              subtitle: `Test`,
-              description: `ddescription`,
-            }}
+            headerInfo={headerInfo}
           />
         </div>
         {/* <!-- Section Title End --> */}

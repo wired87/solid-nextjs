@@ -10,6 +10,7 @@ interface HeroT {
   actionButtonSection?: ReactNode;
   endingText?: string;
   imageOrSection: string | ReactNode;
+  noContact?: boolean;
 }
 
 const Hero: React.FC<HeroT> = (
@@ -19,7 +20,8 @@ const Hero: React.FC<HeroT> = (
     explanationOrComponent,
     actionButtonSection,
     endingText,
-    imageOrSection
+    imageOrSection,
+    noContact
   }
 ) => {
   const [email, setEmail] = useState("");
@@ -44,14 +46,19 @@ const Hero: React.FC<HeroT> = (
     if (actionButtonSection) {
       return actionButtonSection
     }
-    return(
-      <Link
-        href="/contact"
-        className="flex h-12 flex-row items-center rounded-xl bg-primary px-6 text-base font-bold
+    if (!noContact) {
+      return(
+        <Link
+          href="/contact"
+          className="flex h-12 flex-row items-center rounded-xl bg-primary px-6 text-base font-bold
 						text-gray-100 transition hover:scale-105 hover:brightness-125 active:opacity-80"
-      >
-        Kontakt
-      </Link>
+        >
+          Kontakt
+        </Link>
+      )
+    }
+
+
       /*
        <form onSubmit={handleSubmit}>
         <div className="flex flex-wrap gap-5">
@@ -71,7 +78,7 @@ const Hero: React.FC<HeroT> = (
         </div>
       </form>
        */
-    )
+
   }
 
   const getImageSection = () => {
@@ -92,7 +99,7 @@ const Hero: React.FC<HeroT> = (
     }
     return(
       <div className="relative 2xl:-mr-7.5">
-        <Image
+        {/*<Image
           src="/images/shape/shape-01.png"
           alt="shape"
           width={46}
@@ -126,7 +133,7 @@ const Hero: React.FC<HeroT> = (
             alt="Hero"
             fill
           />
-        </div>
+        </div>*/}
       </div>
     )
   }

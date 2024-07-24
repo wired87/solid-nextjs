@@ -63,7 +63,7 @@ const menuData: Menu[] = [
         id: 31,
         title: "KI - Entwicklung und Integration",
         newTab: false,
-        path: "/blog",
+        path: "/ki-entwicklung",
       },
 
     ]
@@ -81,11 +81,6 @@ const menuData: Menu[] = [
         path: "/chatbot",
       },{
         id: 13112,
-        title: "Karriere",
-        newTab: false,
-        path: "/chatbot",
-      },{
-        id: 13112,
         title: "Kontakt",
         newTab: false,
         path: "/contact",
@@ -95,3 +90,11 @@ const menuData: Menu[] = [
 ];
 
 export default menuData;
+/*
+{
+        id: 13112,
+        title: "Karriere",
+        newTab: false,
+        path: "/chatbot",
+      }
+ */

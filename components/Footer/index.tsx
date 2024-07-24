@@ -115,7 +115,9 @@ const Footer = () => {
                       >
                         MVP Entwicklung
                       </a>
-                    </li> <li>
+                    </li>
+                    {/*
+ <li>
                       <a
                         href="#"
                         className="mb-3 inline-block hover:text-primary"
@@ -123,8 +125,6 @@ const Footer = () => {
                         Individuelle Software Entwicklung
                       </a>
                     </li>
-                    {/*
-
                    <li>
                       <a
                         href="#"
@@ -177,7 +177,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/ki"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         KI Entwicklung
@@ -211,23 +211,16 @@ const Footer = () => {
                   <ul>
                     <li>
                       <a
-                        href="#"
+                        href="/about"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Über uns
                       </a>
                     </li>
+
                     <li>
                       <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Karriere
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
+                        href="/contact"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Kontakt

@@ -67,7 +67,7 @@ export const teamData: B[] = [
     mainImage: "/images/trust/hammad.png",
     title: "Hammad Shahzad",
     metadata:
-      "CTO",
+      "Chief Technology Officer",
     tags: [
       "Chat Bot Experte",
       "KI-Experte",
@@ -81,7 +81,7 @@ export const teamData: B[] = [
     mainImage: "/images/trust/felix.png",
     title: "Felix Izere",
     metadata:
-      "CTO",
+      "Chief Design Officer",
     tags: [
       "Design",
       "React",
