@@ -86,7 +86,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       <a
-                        href="#"
+                        href="/web-entwicklung"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Web Entwicklung
@@ -122,7 +122,10 @@ const Footer = () => {
                       >
                         Individuelle Software Entwicklung
                       </a>
-                    </li> <li>
+                    </li>
+                    {/*
+
+                   <li>
                       <a
                         href="#"
                         className="mb-3 inline-block hover:text-primary"
@@ -137,6 +140,7 @@ const Footer = () => {
                         API Entwicklung und Integration
                       </a>
                     </li>
+                    */}
                   </ul>
                 </motion.div>
 

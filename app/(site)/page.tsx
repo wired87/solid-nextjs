@@ -7,6 +7,7 @@ import Integration from "@/components/Integration";
 import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
 import Testimonial from "@/components/Testimonial";
+import homeFeaturesData from "@/components/Features/featuresData";
 
 
 export const metadata: Metadata = {
@@ -14,20 +15,20 @@ export const metadata: Metadata = {
   description: "This is Home for Solid Pro",
   // other metadata
 };
-/*
- ✓ Ready in 2.2s
-(node:8588) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-(Use `node --trace-deprecation ...` to show where the warning was created)
-<Blog />
-<Pricing />
+const headerInfo={
+  title: "SOLID FEATURES",
+  subtitle: "Unsere Spezialgebiete",
+  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
+ante in maximus.`,
+}
 
- */
 export default function Home() {
   return (
     <main>
       <Hero />
       <FunFact />
-      <Feature />
+      <Feature data={homeFeaturesData} headerInfo={headerInfo}/>
       <CTA />
 
       <Integration />

@@ -10,7 +10,7 @@ const menuData: Menu[] = [
         id: 31,
         title: "Web-Entwicklung",
         newTab: false,
-        path: "/blog",
+        path: "/web-entwicklung",
       },
       {
         id: 34,
@@ -28,7 +28,7 @@ const menuData: Menu[] = [
         title: "MVP Entwicklung",
         newTab: false,
         path: "/auth/signup",
-      },{
+      },/*{
         id: 335,
         title: "Individual Software Entwicklung",
         newTab: false,
@@ -45,7 +45,7 @@ const menuData: Menu[] = [
         title: "API Entwicklung und Integration",
         newTab: false,
         path: "/auth/signup",
-      },
+      },*/
     ]
   },
   {
@@ -57,7 +57,7 @@ const menuData: Menu[] = [
         id: 31111111,
         title: "Support Agents",
         newTab: false,
-        path: "/blog",
+        path: "/chatbot",
       },
       {
         id: 31,

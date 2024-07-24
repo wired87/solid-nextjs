@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 type HeaderInfo = {
   title: string;
@@ -11,6 +10,8 @@ type HeaderInfo = {
 
 const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
   const { title, subtitle, description, link } = headerInfo;
+
+
 
   return (
     <>

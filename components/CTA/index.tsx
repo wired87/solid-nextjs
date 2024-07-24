@@ -33,6 +33,7 @@ const CTA = () => {
                 Vereinbaren Sie ein unverbindliches Erstgespräch mit einem unserer Experten.
               </p>
             </motion.div>
+
             <motion.div
               variants={{
                 hidden: {
@@ -49,10 +50,20 @@ const CTA = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_right lg:w-[45%]"
+              className="animate_right py-10 lg:w-[45%]"
             >
+
               <div className="flex items-center justify-end xl:justify-between">
-                <div className={"w-[300px] h-[150px] hidden xl:block"}></div>
+
+                <div className={"w-[300px] my-10 h-[150px] xl:block"}>
+                  <Image
+                    width={210}
+                    height={300}
+                    src="/images/trust/bene_bg.png"
+                    alt="Arrow"
+                    className=""
+                  />
+                </div>
                 <a
                   href="/contact"
                   className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white hover:opacity-90 dark:bg-white dark:text-black"

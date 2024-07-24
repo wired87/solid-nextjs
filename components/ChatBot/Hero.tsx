@@ -107,8 +107,7 @@ export default function Hero() {
           <Link
             href="/contact"
             className="flex h-12 flex-row items-center rounded-xl bg-primary px-6 text-base font-bold
-						text-gray-100 transition hover:scale-105 hover:brightness-125 active:opacity-80"
-          >
+						text-gray-100 transition hover:scale-105 hover:brightness-125 active:opacity-80" >
             Kontakt
           </Link>
         </div>

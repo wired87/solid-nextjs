@@ -1,5 +1,4 @@
 import { FeatureTab } from "@/types/featureTab";
-import {FeaturesTabCarousel} from "@/components/FeaturesTab/FeaturesTabCarousel";
 
 export const mobileTabData: FeatureTab[] = [
   {
@@ -59,8 +58,8 @@ export const webTabData: FeatureTab[] = [
       "Integrierte Webanwendungen",
       "AWS oder Google Cloud-Infrastruktur"
     ],
-    image: <FeaturesTabCarousel img={crmImg} /> ,
-    imageDark: "https://images.mockupcloud.com/images/thumbs/images/2020/09/09/26-galaxy-s10-mockup-1170x780.jpg",
+    image: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/657736c81039468803be3d48_5darkdashboardwebflowtheme.png",// <FeaturesTabCarousel img={crmImg} /> ,
+    imageDark: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/657736c81039468803be3d48_5darkdashboardwebflowtheme.png",
   },
   {
     id: "tabTwo",
@@ -71,8 +70,8 @@ export const webTabData: FeatureTab[] = [
       "UI/UX Design & Branding",
       "SEO-freundlich"
     ],
-    image: <FeaturesTabCarousel img={webImg} />,
-    imageDark: "https://unblast.com/wp-content/uploads/2024/07/iPhone-15-Pro-Max-Mockups.jpg",
+    image: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/636ab10366ad31118a65fe8d_2blogpaidmembershipwebflowtemplate.jpeg", // <FeaturesTabCarousel img={webImg} />,
+    imageDark: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/636ab10366ad31118a65fe8d_2blogpaidmembershipwebflowtemplate.jpeg",
   },
   {
     id: "tabThree",
@@ -83,8 +82,8 @@ export const webTabData: FeatureTab[] = [
       "Produkt-Informations-Management",
       "Migration von Webshops"
     ],
-    image: <FeaturesTabCarousel img={shopImg}/>,
-    imageDark: "https://i.pinimg.com/originals/7d/f1/fa/7df1fabaa3541e62013fe23db51532f0.png",
+    image: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66197afad2d8d4bd3f40682a_a545bd46-1cff-438f-b0d2-d7b44e7c9abc.jpeg", // <FeaturesTabCarousel img={shopImg}/>,
+    imageDark: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66197afad2d8d4bd3f40682a_a545bd46-1cff-438f-b0d2-d7b44e7c9abc.jpeg",
   },
 ];
 

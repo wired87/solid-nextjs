@@ -18,7 +18,7 @@ const FeaturesTab: React.FC<FTT> = (
     titleOne,
     titleTwo,
     titleThree,
-    data
+    data,
   }
 ) => {
   const [currentTab, setCurrentTab] = useState("tabOne");

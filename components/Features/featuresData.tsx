@@ -1,6 +1,6 @@
 import { Feature } from "@/types/feature";
 
-const featuresData: Feature[] = [
+export const homeFeaturesData: Feature[] = [
   {
     id: 1,
     icon: "/images/icon/icon-01.svg",
@@ -46,4 +46,50 @@ const featuresData: Feature[] = [
 
 ];
 
-export default featuresData;
+
+export const workWithUsFeaturesData: Feature[] = [
+  {
+    id: 1,
+    icon: "/images/icon/icon-01.svg",
+    title: "Gewinn",
+    description:
+      "Generieren Sie Umsatz durch Angebote, die Ihre Zielgruppe begeistern.",
+  },
+  {
+    id: 6,
+    icon: "/images/icon/icon-06.svg",
+    title: "Team",
+    description:
+      "Nutzen Sie das Know-how eines erfahrenen Webentwicklungsteams mit mehreren Jahren Expertise.",
+  },
+  {
+    id: 2,
+    icon: "/images/icon/icon-02.svg",
+    title: "Fachwissen",
+    description:
+      "Bleiben Sie wettbewerbsfähig durch den Einsatz von Spitzentechnologien.",
+  },
+  {
+    id: 3,
+    icon: "/images/icon/icon-03.svg",
+    title: "Wartung",
+    description:
+      "Halten Sie Ihre Website auf dem neuesten Stand. Wir bieten Ihnen kontinuierlichen Support.",
+  },
+  {
+    id: 4,
+    icon: "/images/icon/icon-04.svg",
+    title: "Analyse",
+    description:
+      "Treffen Sie datenbasierte Entscheidungen mit modernen Forschungsmethoden.",
+  },
+  {
+    id: 5,
+    icon: "/images/icon/icon-05.svg",
+    title: "Marktgerecht",
+    description:
+      "Antworten Sie auf die Herausforderungen der Nutzer mit einer passenden Lösung.",
+  },
+];
+
+
