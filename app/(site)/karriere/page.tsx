@@ -1,10 +1,11 @@
 import React from "react";
 
 
-export default function KariereMain() {
+function KariereMain() {
   return (
     <>
 
     </>
   );
 }
+export default KariereMain;

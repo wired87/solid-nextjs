@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 
 
 
-export const MVP = () => {
+const MVP = () => {
   return(
     <>
       <MVPMain />
     </>
   );
 }
-
 export default MVP;
+
