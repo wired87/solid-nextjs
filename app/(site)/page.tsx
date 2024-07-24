@@ -7,14 +7,14 @@ import Integration from "@/components/Integration";
 import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
 import Testimonial from "@/components/Testimonial";
-import homeFeaturesData from "@/components/Features/featuresData";
-
+import {homeFeaturesData} from "@/components/Features/featuresData";
 
 export const metadata: Metadata = {
   title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
   description: "This is Home for Solid Pro",
   // other metadata
 };
+
 const headerInfo={
   title: "SOLID FEATURES",
   subtitle: "Unsere Spezialgebiete",

@@ -1,18 +1,20 @@
 import { Metadata } from "next";
-import {DesignMain} from "@/components/Design";
+import {MVPMain} from "@/components/mvp";
 
 export const metadata: Metadata = {
-  title: "UI/UX Design",
+  title: "MVP Entwicklung",
   description: "This is Login page for Startup Pro",
 
 };
 
-const Design = () => {
+
+
+export const MVP = () => {
   return(
     <>
-      <DesignMain />
+      <MVPMain />
     </>
   );
 }
 
-export default Design;
+export default MVP;

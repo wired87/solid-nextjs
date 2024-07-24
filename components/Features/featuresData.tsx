@@ -92,4 +92,95 @@ export const workWithUsFeaturesData: Feature[] = [
   },
 ];
 
+export const workWithUsUIFeaturesData: Feature[] = [
+  {
+    id: 1,
+    icon: "/images/icon/icon-01.svg",
+    title: "Wachstum",
+    description:
+      "Effektive UX-Lösungen sind Ihr Schlüssel zu neuen Geschäftschancen.",
+  },
+  {
+    id: 6,
+    icon: "/images/icon/icon-06.svg",
+    title: "Fachwissen",
+    description:
+      "Nutzen Sie das Know-how eines erfahrenen Webentwicklungsteams mit mehreren Jahren Expertise.",
+  },
+  {
+    id: 2,
+    icon: "/images/icon/icon-02.svg",
+    title: "Benutzerfreundlichkeit",
+    description:
+      "Gestalten Sie intuitive Benutzeroberflächen, die begeistern und im Gedächtnis bleiben.",
+  },
+  {
+    id: 3,
+    icon: "/images/icon/icon-03.svg",
+    title: "Weiterentwicklung",
+    description:
+      "Unsere nutzerzentrierten Lösungen überzeugen durch modernste Technologien und intuitive Bedienung. Wir entwickeln für Ihre Bedürfnisse.",
+  },
+  {
+    id: 4,
+    icon: "/images/icon/icon-04.svg",
+    title: "Nutzerzentrierung",
+    description:
+      "Wir entwickeln nutzerzentrierte Lösungen, die durch moderne Technologien und intuitive Bedienung überzeugen.",
+  },
+  {
+    id: 5,
+    icon: "/images/icon/icon-05.svg",
+    title: "Branding",
+    description:
+      "Schaffen Sie einen unverwechselbaren Markenauftritt durch ein konsistentes und einheitliches Erscheinungsbild.",
+  },
+];
+
+export const workWithUsMVPFeaturesData: Feature[] = [
+  {
+    id: 1,
+    icon: "/images/icon/icon-01.svg",
+    title: "Forschung",
+    description:
+      "Wir treffen datenbasierte Entscheidungen in jeder Phase der MVP-Entwicklung, um Ihr Produkt " +
+      "kontinuierlich zu optimieren und erfolgreich am Markt zu etablieren.",
+  },
+  {
+    id: 6,
+    icon: "/images/icon/icon-06.svg",
+    title: "Marktgerecht",
+    description:
+      "Wir entwickeln Produkte, die sowohl die Anforderungen des Marktes erfüllen als auch den Bedürfnissen der Nutzer gerecht werden.",
+  },
+  {
+    id: 2,
+    icon: "/images/icon/icon-02.svg",
+    title: "Validierung",
+    description:
+      "Jede Idee wird rigoros getestet und iterativ weiterentwickelt, um ihr volles Potenzial auszuschöpfen und ein erfolgreiches Produkt zu schaffen."
+  },
+  {
+    id: 3,
+    icon: "/images/icon/icon-03.svg",
+    title: "Experten",
+    description:
+      "Ein Team technischer Experten mit branchenübergreifendem Know-how.",
+  },
+  {
+    id: 4,
+    icon: "/images/icon/icon-04.svg",
+    title: "Wettbewerbsfähigkeit",
+    description:
+      "Unsere maßgeschneiderten MVP-Entwicklungslösungen sind einzigartig und heben Ihr Produkt von der Konkurrenz ab.",
+  },
+  {
+    id: 5,
+    icon: "/images/icon/icon-05.svg",
+    title: "Reputation",
+    description:
+      "Zahlreiche zufriedene Kunden und unabhängige Quellen bestätigen die Qualität unserer Arbeit.",
+  },
+];
+
 

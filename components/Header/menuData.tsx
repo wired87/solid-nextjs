@@ -22,7 +22,7 @@ const menuData: Menu[] = [
         id: 354,
         title: "UI/UX-Design",
         newTab: false,
-        path: "/auth/signup",
+        path: "/design",
       },{
         id: 335,
         title: "MVP Entwicklung",

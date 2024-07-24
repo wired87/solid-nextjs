@@ -27,7 +27,7 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="animate_top w-1/2 lg:w-1/4"
               >
-                {/*logo sectioon here  <a href="index.html" className="relative">
+                {/*logo sectioon here  <a href="index.tsx.html" className="relative">
                   <Image
                     width={110}
                     height={80}
@@ -102,7 +102,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/design"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         UI/UX Design

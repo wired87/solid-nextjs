@@ -3,7 +3,7 @@ import FeaturesTab from "@/components/FeaturesTab";
 import {webTabData} from "@/components/FeaturesTab/featuresTabData";
 import CTA from "@/components/CTA";
 import SectionHeader from "@/components/Common/SectionHeader";
-import {SingleSectionTL} from "@/components/About/SingleSection";
+import {SingleSectionTR} from "@/components/About/SingleSection";
 import Contact from "@/components/Contact";
 import React from "react";
 import Feature from "@/components/Features";
@@ -52,7 +52,7 @@ export const MainContent = (
       <SectionHeader
         headerInfo={sectionHeaderStuff} />
 
-      <SingleSectionTL
+      <SingleSectionTR
         imageSec={"https://miro.medium.com/v2/resize:fit:828/format:webp/1*e1pEmosqksBMn2FQYlEc2g.png"}
         headingOne={"Modernste Technologien"}
         headingTwo={"Erleben Sie die Vorteile von KI"}

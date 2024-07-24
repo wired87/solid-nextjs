@@ -31,6 +31,22 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'miro.medium.com',
         pathname: '/**',// wp-content/uploads/2020/07/' // Adjust the path if needed based on your image URLs
+      },{
+        protocol: 'https',
+        hostname: 'www.travelpayouts.com',
+        pathname: '/**',// wp-content/uploads/2020/07/' // Adjust the path if needed based on your image URLs
+      },{
+        protocol: 'https',
+        hostname: 'i2.wp.com',
+        pathname: '/**',// wp-content/uploads/2020/07/' // Adjust the path if needed based on your image URLs
+      },{
+        protocol: 'https',
+        hostname: 'www.nextbraintech.com',
+        pathname: '/**',// wp-content/uploads/2020/07/' // Adjust the path if needed based on your image URLs
+      },{
+        protocol: 'https',
+        hostname: 'blog.solguruz.com',
+        pathname: '/**',// wp-content/uploads/2020/07/' // Adjust the path if needed based on your image URLs
       },
     ],
   },

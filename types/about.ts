@@ -5,4 +5,5 @@ export interface AboutSingleT {
   headingTwo: string;
   exp: string;
   imageSec?: ReactNode;
+  points?: string[];
 }
