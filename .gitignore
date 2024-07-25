@@ -7,7 +7,7 @@
 .vscode
 # testing
 /coverage
-
+.vercel
 # next.js
 /.next/
 /out/
