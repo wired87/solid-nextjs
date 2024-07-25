@@ -25,7 +25,7 @@ const mvpDev: string = "/images/trust/engine_dev.jpg";
 
 
 const topSection = {
-  imageSec: "https://www.nextbraintech.com/assets/front/base/images/mvp-inner-img.png",
+  imageSec: "/images/mvp/idea.png", //"https://www.nextbraintech.com/assets/front/base/images/mvp-inner-img.png",
   headingOne: "",
   headingTwo: "Produkt-Entdeckung",
   exp: "Wir analysieren gründlich den Markt und bewerten die Probleme und Herausforderungen der Nutzer, um ein " +
@@ -37,7 +37,7 @@ const topSection = {
   ]
 }
 const middleSection = {
-  imageSec: "https://blog.solguruz.com/wp-content/uploads/2023/11/Minimum-Viable-Product-8-Benefits-of-MVP-Development.png",
+  imageSec: "/images/mvp/mvp.png", //"https://blog.solguruz.com/wp-content/uploads/2023/11/Minimum-Viable-Product-8-Benefits-of-MVP-Development.png",
   headingOne: "",
   headingTwo: "MVP-Design",
   exp: "Das Design entsteht forschungsbasiert von Grund auf, um eine nahtlose Nutzererfahrung und " +

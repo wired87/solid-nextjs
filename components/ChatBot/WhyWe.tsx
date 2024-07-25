@@ -5,7 +5,7 @@ import {SingleSectionTL, SingleSectionTR} from "@/components/About/SingleSection
 import React from "react";
 
 const topSection = {
-  imageSec: "https://www.botworld.cloud/home/eng.png",
+  imageSec: "/images/bot/eng.png",
   headingOne: "Ihr digitaler Kundenservice-Experte",
   headingTwo: "24/7 Verfügbarkeit",
   exp: "Bieten Sie Ihren Kunden erstklassigen Support rund um die Uhr, 24 Stunden am Tag, " +
@@ -15,7 +15,7 @@ const topSection = {
 }
 
 const middleSection = {
-  imageSec: "https://www.botworld.cloud/home/tools.png",
+  imageSec: "/images/bot/tools.png",
   headingOne: "Integrations",
   headingTwo: "Verknüpfbar mit dutzenden services",
   exp: "",
@@ -35,8 +35,9 @@ const middleSection = {
     "Erhalte Feedback"
   ]
 }
+
 const bottomSection = {
-  imageSec: "https://static.vecteezy.com/system/resources/previews/004/112/841/original/facebook-instagram-and-telegram-logo-free-vector.jpg",
+  imageSec: "/images/bot/channels.jpg", // "https://static.vecteezy.com/system/resources/previews/004/112/841/original/facebook-instagram-and-telegram-logo-free-vector.jpg",
   headingOne: "",
   headingTwo: "Multi Channel verfügbarkeit",
   exp: "Keine Einschränkungen! Unser Bot ist auf den gängigsten Plattformen integrierbar",

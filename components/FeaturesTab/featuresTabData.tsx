@@ -6,27 +6,27 @@ export const mobileTabData: FeatureTab[] = [
     title: "Kotlin/Java",
     desc1: `Unser professionelles Team entwickelt innovative Anwendungen für Android-Geräte, die auf die individuellen Bedürfnisse unserer Kunden zugeschnitten sind.`,
     desc2: ``,
-    image: "https://images.mockupcloud.com/images/thumbs/images/2020/09/09/26-galaxy-s10-mockup-1170x780.jpg",
-    imageDark: "https://images.mockupcloud.com/images/thumbs/images/2020/09/09/26-galaxy-s10-mockup-1170x780.jpg",
+    image: "/images/mobile/mobile_pink.jpg", //"https://images.mockupcloud.com/images/thumbs/images/2020/09/09/26-galaxy-s10-mockup-1170x780.jpg",
+    imageDark: "/images/mobile/mobile_pink.jpg",
   },
   {
     id: "tabTwo",
     title: "Swift/Objective C",
     desc1: `Wir entwickeln skalierbare mobile Applikationen für iOS mit einer angenehmen User Experience, die einen bleibenden Eindruck hinterlässt.`,
     desc2: `Beider Planung arbeiten wir eng mit unseren Kunden zusammen um für sie die optimale Lösung zu finden.`,
-    image: "https://unblast.com/wp-content/uploads/2024/07/iPhone-15-Pro-Max-Mockup-3.jpg",
-    imageDark: "https://unblast.com/wp-content/uploads/2024/07/iPhone-15-Pro-Max-Mockups.jpg",
+    image: "/images/mobile/nft.jpg", //"https://unblast.com/wp-content/uploads/2024/07/iPhone-15-Pro-Max-Mockup-3.jpg",
+    imageDark: "/images/mobile/nft.jpg",
   },
   {
     id: "tabThree",
     title: "REACT NATIVE",
     desc1: `Wir sind auf die Entwicklung plattformübergreifender mobiler Anwendungen spezialisiert, die auf allen Betriebssystemen stabil und sicher laufen.`,
     desc2: `Dabei sparen Sie nicht nur Geld sondern auch Zeit da die Arbeit nicht zwei mal für verschieden OS erledigt werden muss.`,
-    image: "https://i.pinimg.com/originals/7d/f1/fa/7df1fabaa3541e62013fe23db51532f0.png",
-    imageDark: "https://i.pinimg.com/originals/7d/f1/fa/7df1fabaa3541e62013fe23db51532f0.png",
+    image: "/images/mobile/mock.png",// "https://i.pinimg.com/originals/7d/f1/fa/7df1fabaa3541e62013fe23db51532f0.png",
+    imageDark: "/images/mobile/mock.png",
   },
 ];
-
+/*
 const crmImg: string[] = [
   "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/657736c81039468803be3d48_5darkdashboardwebflowtheme.png",
   "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/657736c81039468803be3d50_4techdashboardwebflowtemplate.png",
@@ -47,7 +47,7 @@ const webImg: string[] = [
   "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/636ab10366ad3100e465fe89_5blogwebflowmembershipwebflowtheme.png",
   "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/636ab10366ad31413f65fe8c_1blogmembershipwebflowtemplate.png"
 ]
-
+*/
 export const webTabData: FeatureTab[] = [
   {
     id: "tabOne",
@@ -58,8 +58,8 @@ export const webTabData: FeatureTab[] = [
       "Integrierte Webanwendungen",
       "AWS oder Google Cloud-Infrastruktur"
     ],
-    image: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/657736c81039468803be3d48_5darkdashboardwebflowtheme.png",// <FeaturesTabCarousel img={crmImg} /> ,
-    imageDark: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/657736c81039468803be3d48_5darkdashboardwebflowtheme.png",
+    image: "/images/web/dash.png", //"https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/657736c81039468803be3d48_5darkdashboardwebflowtheme.png",// <FeaturesTabCarousel img={crmImg} /> ,
+    imageDark: "/images/web/dash.png" // "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/657736c81039468803be3d48_5darkdashboardwebflowtheme.png",
   },
   {
     id: "tabTwo",
@@ -70,8 +70,8 @@ export const webTabData: FeatureTab[] = [
       "UI/UX Design & Branding",
       "SEO-freundlich"
     ],
-    image: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/636ab10366ad31118a65fe8d_2blogpaidmembershipwebflowtemplate.jpeg", // <FeaturesTabCarousel img={webImg} />,
-    imageDark: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/636ab10366ad31118a65fe8d_2blogpaidmembershipwebflowtemplate.jpeg",
+    image: "/images/web/webs.jpeg", // <FeaturesTabCarousel img={webImg} />,
+    imageDark: "/images/web/webs.jpeg" //"https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/636ab10366ad31118a65fe8d_2blogpaidmembershipwebflowtemplate.jpeg",
   },
   {
     id: "tabThree",
@@ -82,8 +82,8 @@ export const webTabData: FeatureTab[] = [
       "Produkt-Informations-Management",
       "Migration von Webshops"
     ],
-    image: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66197afad2d8d4bd3f40682a_a545bd46-1cff-438f-b0d2-d7b44e7c9abc.jpeg", // <FeaturesTabCarousel img={shopImg}/>,
-    imageDark: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66197afad2d8d4bd3f40682a_a545bd46-1cff-438f-b0d2-d7b44e7c9abc.jpeg",
+    image: "/images/web/shop.jpeg", //"https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66197afad2d8d4bd3f40682a_a545bd46-1cff-438f-b0d2-d7b44e7c9abc.jpeg", // <FeaturesTabCarousel img={shopImg}/>,
+    imageDark: "/images/web/shop.jpeg" //"https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66197afad2d8d4bd3f40682a_a545bd46-1cff-438f-b0d2-d7b44e7c9abc.jpeg",
   },
 ];
 
@@ -118,8 +118,8 @@ export const aiTabData: FeatureTab[] = [
       "Echtzeit-Verarbeitung",
 
     ],
-    image: "https://elements-cover-images-0.imgix.net/804e48d0-c49f-4c35-9d56-f92803e4c65d?auto=compress%2Cformat&w=1370&fit=max&s=abbcf3f437553c2a5eb4b9905b9f2fab", // <FeaturesTabCarousel img={webImg} />,
-    imageDark: "https://elements-cover-images-0.imgix.net/804e48d0-c49f-4c35-9d56-f92803e4c65d?auto=compress%2Cformat&w=1370&fit=max&s=abbcf3f437553c2a5eb4b9905b9f2fab",
+    image: "/images/ki/anw.avif", // <FeaturesTabCarousel img={webImg} />,
+    imageDark: "/images/ki/anw.avif" // "https://elements-cover-images-0.imgix.net/804e48d0-c49f-4c35-9d56-f92803e4c65d?auto=compress%2Cformat&w=1370&fit=max&s=abbcf3f437553c2a5eb4b9905b9f2fab",
   },
   {
     id: "tabThree",
@@ -136,8 +136,8 @@ export const aiTabData: FeatureTab[] = [
       "Gesichtserkennung",
       "Und vieles mehr..."
     ],
-    image: "https://cdn-kafip.nitrocdn.com/HjvsLFBjOHoXPlmiShNfCTokNaxBPUJI/assets/images/optimized/rev-b891204/ultraconsultants.com/wp-content/uploads/2024/03/ai-in-erp.jpg", // <FeaturesTabCarousel img={shopImg}/>,
-    imageDark: "https://cdn-kafip.nitrocdn.com/HjvsLFBjOHoXPlmiShNfCTokNaxBPUJI/assets/images/optimized/rev-b891204/ultraconsultants.com/wp-content/uploads/2024/03/ai-in-erp.jpg",
+    image: "/images/ki/sys.webp", // <FeaturesTabCarousel img={shopImg}/>,
+    imageDark: "/images/ki/sys.webp",
   },
 ];
 

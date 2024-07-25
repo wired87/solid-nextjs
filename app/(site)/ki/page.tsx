@@ -39,7 +39,7 @@ const ImageSectionCTA = () => {
 const ImageSection = () => {
   return(
     <Image
-      src="https://di3xp7dfi3cq.cloudfront.net/media/catalog/product/cache/0fbcefc3a799a327b223626345048888/m/o/models-1.jpg"
+      src="/images/ki/train.jpg" //"https://di3xp7dfi3cq.cloudfront.net/media/catalog/product/cache/0fbcefc3a799a327b223626345048888/m/o/models-1.jpg"
       alt="png"
       width={1000}
       height={600}

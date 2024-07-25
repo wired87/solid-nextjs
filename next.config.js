@@ -12,7 +12,15 @@ const nextConfig = {
         hostname: "cdn.sanity.io",
         port: "",
       },
-      {
+
+    ],
+  },
+};
+
+module.exports = nextConfig;
+
+/*
+{
         protocol: 'https',
         hostname: 'images.mockupcloud.com',
         pathname: '/**',// wp-content/uploads/2020/07/' // Adjust the path if needed based on your image URLs
@@ -76,13 +84,5 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'cdn-kafip.nitrocdn.com',
         pathname: '/**',// wp-content/uploads/2020/07/' // Adjust the path if needed based on your image URLs
-      },{
-        protocol: 'https',
-        hostname: 'static.vecteezy.com',
-        pathname: '/**',// wp-content/uploads/2020/07/' // Adjust the path if needed based on your image URLs
       },
-    ],
-  },
-};
-
-module.exports = nextConfig;
+ */
