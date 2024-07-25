@@ -6,7 +6,11 @@ export const metadata: Metadata = {
   description: "This is Login page for Startup Pro",
   // other metadata
 };
-
+/*
+ "embla-carousel-autoplay": "^8.1.7",
+    "embla-carousel-class-names": "^8.1.7",
+    "embla-carousel-react": "^8.1.7",
+ */
 const SigninPage = () => {
   return (
     <>
