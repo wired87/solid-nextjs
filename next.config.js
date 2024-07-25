@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["localhost"],
+    domains: process.env.NODE_ENV === "development" ? ["localhost"] : [],
     unoptimized: false,
     remotePatterns: [
       {
@@ -15,6 +15,7 @@ const nextConfig = {
 
     ],
   },
+  output: "standalone",
 };
 
 module.exports = nextConfig;

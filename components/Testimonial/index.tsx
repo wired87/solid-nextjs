@@ -72,8 +72,8 @@ const Testimonial = () => {
                 },
               }}
             >
-              {testimonialData.map((review) => (
-                <SwiperSlide key={review?.id}>
+              {testimonialData.map((review, i) => (
+                <SwiperSlide key={i}>
                   <SingleTestimonial review={review} />
                 </SwiperSlide>
               ))}

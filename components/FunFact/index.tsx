@@ -59,6 +59,7 @@ const FunFact: React.FC<FactT> = (
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
                 className="animate_top text-center"
+                key={i}
               >
                 <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
                   {
