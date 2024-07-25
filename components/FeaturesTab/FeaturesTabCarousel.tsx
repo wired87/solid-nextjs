@@ -1,10 +1,8 @@
 "use client"
 
 import React from 'react'
-import useEmblaCarousel from 'embla-carousel-react';
 
 import Image from "next/image";
-import Autoplay from 'embla-carousel-autoplay'
 
 interface FTCT {
   img: string[];
@@ -15,10 +13,10 @@ export const FeaturesTabCarousel:React.FC<FTCT> = (
     img
   }
 ) => {
-  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()])
+  // const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]) ref={emblaRef}
   return(
     <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
+      <div className="embla__viewport" >
         <div className="embla__container">
         {img.map((item, i) => (
           <div className="embla__slide" key={i}>
