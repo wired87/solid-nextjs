@@ -33,7 +33,7 @@ const WebDev = () => {
         imageOrSection={<Presentation />}
         mainHeading={"Qualitativ hochwertige Webanwendungen"}
         smallHeading={""}
-        endingText={"Lassen Sie uns starten"}
+        endingText={""}
       />
       <MainContent />
     </>

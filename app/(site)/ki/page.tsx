@@ -10,7 +10,7 @@ import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
   title: "KI",
-  description: "KI Entwicklung service beschreibung",
+  description: "KI Entwicklung service Beschreibung",
 };
 
 const MobileAction = () => {

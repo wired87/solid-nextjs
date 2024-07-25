@@ -22,16 +22,16 @@ const headerInfo = {
 
 const topSection = {
   imageSec: "/images/design/mobile.webp", //"https://i2.wp.com/www.wendyzhou.se/blog/wp-content/uploads/2019/08/uixninja.png?fit=1600%2C1200&ssl=1",
-  headingOne: "UI/UX Design",
-  headingTwo: "",
+  headingOne: "",
+  headingTwo: "UI/UX Design",
   exp: "Wir sind darauf spezialisiert, " +
     "exzellente Nutzererlebnisse zu schaffen, die durch innovative " +
     "Methoden die Kundenzufriedenheit steigern und Unternehmen voranbringen."
 }
 const middleSection = {
   imageSec: "/images/design/statistic.webp", //"https://www.travelpayouts.com/blog/wp-content/uploads/2020/06/statistic-google.jpg",
-  headingOne: "User Experience Analyse",
-  headingTwo: "",
+  headingOne: "",
+  headingTwo: "User Experience Analyse",
   exp: "Wir verschaffen Marken einen Wettbewerbsvorsprung, " +
     "indem wir das Nutzerverhalten analysieren und Ideen basierend auf " +
     "Nutzerwahrnehmungen und -bedürfnissen validieren."
@@ -39,8 +39,8 @@ const middleSection = {
 
 const bottomSection = {
   imageSec: "/images/design/mob2.png", //"https://miro.medium.com/v2/resize:fit:3200/1*8ifpC7J69gtWlx_-3uOoFA.png",
-  headingOne: "UX-Audit",
-  headingTwo: "",
+  headingOne: "",
+  headingTwo: "UX-Audit",
   exp: "Unser Team analysiert Ihr bestehendes Design und zeigt Optimierungspotenziale auf, " +
     "um die Nutzerattraktivität Ihres Unternehmens zu steigern."
 }
@@ -82,8 +82,8 @@ const ImageSection = () => {
 
 export const DesignMain = () => {
   const headerConf = { //todo
-    title:"Was wir Ihnen bieten",
-    subtitle:"", 
+    title:"Service",
+    subtitle:"Unsere Dienstleistungen",
     description:"", 
     link:false
   }

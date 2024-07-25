@@ -53,7 +53,7 @@ export const MainContent = (
         headerInfo={sectionHeaderStuff} />
 
       <SingleSectionTR
-        imageSec={"/images/design/ai.png"} // https://miro.medium.com/v2/resize:fit:828/format:webp/1*e1pEmosqksBMn2FQYlEc2g.png
+        imageSec={"/images/design/ai.webp"} // https://miro.medium.com/v2/resize:fit:828/format:webp/1*e1pEmosqksBMn2FQYlEc2g.png
         headingOne={"Modernste Technologien"}
         headingTwo={"Erleben Sie die Vorteile von KI"}
         exp={exp}

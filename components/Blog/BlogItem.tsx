@@ -53,7 +53,7 @@ const BlogItem = ({ blog }: { blog: B }) => {
           </h3>
           <p className="line-clamp-3">{metadata}</p>
           {tags?.map((item, i)=> (
-            <Chip className={"text-white my-2 mx-1.5 px-2 py-1 text-xs"} color={getRandomTailwindColor()} key={i}>{item}</Chip>
+            <Chip className={"text-white my-2 mx-1.5 px-2 py-1 text-xs"} color={"primary"} key={i}>{item}</Chip>
           ))}
         </div>
 

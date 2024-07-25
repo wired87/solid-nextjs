@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Hero from "@/components/Hero";
-
+import Image from "next/image";
 import React from "react";
 import {MainContent} from "@/components/About/Content";
 
@@ -14,17 +14,16 @@ export const metadata: Metadata = {
 
 const AboutImageSection = () => {
   return(
-    <></>
+    <>
+      <Image
+        src={"/images/trust/about_hero.jpg"}
+        alt={"https://www.freepik.com/free-photo/close-up-young-colleagues-having-meeting_17123784.htm#query=team%20planning&position=10&from_view=keyword&track=ais_user&uuid=ad24fb6b-48c9-49d7-8fa5-33a288bf7d80"}
+        width={600}
+        height={600}
+      />
+    </>
   );
 }
-/*
-<Image
-      src={"https://img.freepik.com/vektoren-kostenlos/brainstorming-idee-des-geschaeftsteams-und-gluehbirne-vom-puzzle-zusammenarbeit-im-arbeitsteam-zusammenarbeit-in-unternehmen-konzept-der-gegenseitigen-unterstuetzung-der-kollegen-helle-lebendige-violette-isolierte-illustration_335657-580.jpg?t=st=1721850382~exp=1721853982~hmac=6a2a373b41b540f40df4fe13e46363a367dd331a86e33a214ea371e408bcaaac&w=1060"}
-      alt={"https://img.freepik.com/vektoren-kostenlos/brainstorming-idee-des-geschaeftsteams-und-gluehbirne-vom-puzzle-zusammenarbeit-im-arbeitsteam-zusammenarbeit-in-unternehmen-konzept-der-gegenseitigen-unterstuetzung-der-kollegen-helle-lebendige-violette-isolierte-illustration_335657-580.jpg?t=st=1721850382~exp=1721853982~hmac=6a2a373b41b540f40df4fe13e46363a367dd331a86e33a214ea371e408bcaaac&w=1060\n"}
-      width={600}
-      height={600}
-    />
- */
 
 export default function AboutMain() {
   return (

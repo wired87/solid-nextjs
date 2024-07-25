@@ -49,15 +49,15 @@ const Hero: React.FC<HeroT> = (
     if (!noContact) {
       return(
         <Link
-          href="/contact"
-          className="flex h-12 flex-row items-center rounded-xl bg-primary px-6 text-base font-bold
-						text-gray-100 transition hover:scale-105 hover:brightness-125 active:opacity-80"
+          href={"/contact"}
+          aria-label="get started button"
+          className="flex max-w-[250px] justify-center items-center hover:brightness-125 rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
         >
-          Kontakt
+          Get Started
         </Link>
+
       )
     }
-
 
       /*
        <form onSubmit={handleSubmit}>
