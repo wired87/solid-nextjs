@@ -1,4 +1,4 @@
-import Signin from "@/components/Auth/Signin";
+// import Signin from "@/components/Auth/Signin";<Signin />
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const SigninPage = () => {
   return (
     <>
-      <Signin />
+
     </>
   );
 };
