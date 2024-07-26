@@ -253,9 +253,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          {/* <!-- Footer Top --> */}
 
-          {/* <!-- Footer Bottom --> */}
           <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-stroke py-7 dark:border-strokedark lg:flex-row lg:justify-between lg:gap-0">
             <motion.div
               variants={{
@@ -277,13 +275,13 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-8">
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <a href="/terms-of-service" className="hover:text-primary">
                     Terms of Service
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
-                    Privacy Policy
+                  <a href="https://www.freeprivacypolicy.com/live/55d074b9-8cc4-4e80-8709-45effd7c8e49" className="hover:text-primary">
+                    Datenschutz
                   </a>
                 </li>
               </ul>

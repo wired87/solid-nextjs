@@ -6,8 +6,8 @@ import SectionHeader from "../Common/SectionHeader";
 const Integration = () => {
   return (
     <>
-      <section>
-        <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+      <section className={"mb-20"}>
+        <div className="mx-auto  max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <SectionHeader
             headerInfo={{
               title: ``,

@@ -6,6 +6,7 @@ import Hero from "@/components/ChatBot/Hero";
 import CTA from "@/components/CTA";
 import React from "react";
 import SectionHeader from "@/components/Common/SectionHeader";
+import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
   title: "Blog Page - Solid SaaS Boilerplate",
@@ -16,9 +17,10 @@ export const metadata: Metadata = {
 const ChatBotMain = async () => {
 
   const heading = {
-    title: "Was macht ein support Agent?",
-    subtitle: "",
-    description: "",
+    title: "Info",
+    subtitle: "Was zeichnet einen Support Agenten aus",
+    description: "Support Agenten unterstützen schon heute den Geschäftsablauf unzähliger Unternehmen." +
+      "Erleben auch Sie die Vorteile eines maßgeschneiderten KI Agenten",
     link: false,
   }
   return (
@@ -31,10 +33,8 @@ const ChatBotMain = async () => {
       </div>
       <ChatBotNeed />
       <CTA />
-
       <FAQ data={botFaqData} />
-
-
+      <Contact />
     </>
   );
 };

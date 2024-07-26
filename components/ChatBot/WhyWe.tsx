@@ -43,12 +43,11 @@ const bottomSection = {
   exp: "Keine Einschränkungen! Unser Bot ist auf den gängigsten Plattformen integrierbar",
   points: [
     "Instagram",
-    "Facebook Messengeer",
+    "Facebook Messenger",
     "Telegram",
     "WhatsApp",
     "Mobil"
   ]
-
 }
 
 

@@ -4,27 +4,24 @@ import Feature from "@/components/Features";
 import {homeFeaturesData} from "@/components/Features/featuresData";
 import CTA from "@/components/CTA";
 import Integration from "@/components/Integration";
-import Testimonial from "@/components/Testimonial";
 import Contact from "@/components/Contact";
 const headerInfo= {
-  title: "SOLID FEATURES",
+  title: "Wo sind wir die besten",
   subtitle: "Unsere Spezialgebiete",
-  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-ante in maximus.`,
+  description: `Software is vielseitig. 
+  Durch unsere Expertise und Erfahrung decken wir ein breites spektrum an möglichkeiten ab um Ihr Projekt umzusetzen `,
 }
+//       <Testimonial />
 const HomeMain = () => {
   return(
 
     <>
-
       <FunFact data={factDataHome}/>
       <Feature data={homeFeaturesData} headerInfo={headerInfo}/>
       <CTA />
 
       <Integration />
 
-      <Testimonial />
       <Contact />
     </>
 

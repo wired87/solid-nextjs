@@ -2,34 +2,34 @@ import {FunFactDataT} from "@/types/funFact";
 
 export const factDataHome: FunFactDataT[] = [
   {
-    value: 4,
+    value: 12,
     text: "Aufträge"
   },
   {
-    value: 2,
+    value: 1.5,
     text: "Jahre im Geschäft"
   },
   {
-    value: 4,
+    value: 12,
     text: "Zufriedene Kunden"
   },
 ]
 
 export const detailedFacts: FunFactDataT[] = [
   {
-    value: 24,
+    value: 12,
     text: "Aufträge"
   },
   {
-    value: 19,
+    value: 6,
     text: "Beschäftigte Freiberufler"
   },
   {
-    value: 2,
+    value: 1.5,
     text: "Jahre im Geschäft"
   },
   {
-    value: 24,
+    value: 12,
     text: "Zufriedene Kunden"
   },
 ]

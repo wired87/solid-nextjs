@@ -84,6 +84,11 @@ const menuData: Menu[] = [
         title: "Kontakt",
         newTab: false,
         path: "/contact",
+      },{
+        id: 131125,
+        title: "Impressum",
+        newTab: false,
+        path: "/imprint",
       },
     ]
   },

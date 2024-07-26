@@ -54,7 +54,7 @@ export default function Hero() {
         {/* Headings. */}
         <div className="flex flex-col items-center">
           <h1 className="text-3xl font-light text-gray-100">
-            <span className="font-bold text-gray-100">Support</span> Assistance
+            <span className="font-bold text-gray-100">Erlebe die neue Ära der </span> Support Assistance
           </h1>
           <div className="mb-1" />
           <p className="cursor-default text-lg font-semibold text-gray-400 transition hover:brightness-125">
@@ -82,12 +82,6 @@ export default function Hero() {
         </div>
         <div className="mb-8" />
 
-        <p className="max-w-lg text-center text-xl font-semibold text-gray-400">
-          Multi channel verfügbar{"\n "} <br/>
-
-            Integrierbar in dutzende services
-
-        </p>
         <div className="mb-6" />
 
         {/* Buttons. */}

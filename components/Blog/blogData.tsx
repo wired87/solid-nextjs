@@ -64,7 +64,7 @@ export const teamData: B[] = [
   },
   {
     _id: 2,
-    mainImage: "/images/trust/hammad.png",
+    mainImage: "/images/trust/hammad.jpeg",
     title: "Hammad Shahzad",
     metadata:
       "Chief Technology Officer",

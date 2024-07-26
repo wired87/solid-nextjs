@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Contact",
   description: "Contact Page",
 };
+// import {Code} from "@nextui-org/code";
 
 const ContactPage = () => {
 

@@ -1,24 +1,174 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
+import React, {useState} from "react";
+import {Checkbox, CheckboxGroup} from '@nextui-org/react';
+import {Slider} from "@nextui-org/slider";
+import {CheckBoxObj, MailT} from "@/types/contact";
 
+import {Spinner} from "@nextui-org/spinner";
+import CModal from "@/components/Modal";
+import axios from "axios";
+
+
+const checkBoxValues: CheckBoxObj[] = [
+  {
+    title: "MVP Entwicklung",
+    selected: false
+  },{
+    title: "Individuelle Software Entwicklung",
+    selected: false
+  },{
+    title: "UI/UX Design",
+    selected: false
+  },{
+    title: "Kontakt",
+    selected: false
+  },
+]
+
+const checkBoxValues2: CheckBoxObj[] =[
+  {
+    title: "Webentwicklung",
+    selected: false
+  },{
+    title: "Mobile App Entwicklung",
+    selected: false
+  },
+  {
+    title: "KI Entwicklung/Integration",
+    selected: false
+  },{
+    title: "Chat Bot",
+    selected: false
+  },
+]
+
+
+const sliderMasrks = [
+  {
+    value: 3,
+    label: "3",
+  },{
+    value: 6,
+    label: "6",
+  },{
+    value: 9,
+    label: "9",
+  },{
+    value: 12,
+    label: "12",
+  },{
+    value: 15,
+    label: "15",
+  },{
+    value: 18,
+    label: "18",
+  },{
+    value: 21,
+    label: "21",
+  },{
+    value: 24,
+    label: "24",
+  },
+
+]
 const Contact = () => {
-  /**
-   * Source: https://www.joshwcomeau.com/react/the-perils-of-rehydration/
-   * Reason: To fix rehydration error
-   */
-  const [hasMounted, setHasMounted] = React.useState(false);
-  React.useEffect(() => {
-    setHasMounted(true);
-  }, []);
-  if (!hasMounted) {
-    return null;
+  const [selected, setSelected] = useState<string[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [success, setSuccess] = useState<boolean>(false);
+  const [error, setError] = useState<boolean>(false);
+
+  const [formData, setFormData] = useState<MailT>({
+    name: '',
+    email: '',
+    subject: '',
+    phone: '', // Optional
+    message: '',
+    preferredServices: selected, // Array for multiple checkboxes
+    time: 0, // Slider value
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSliderChange = (value: number) => {
+    setFormData({ ...formData, time: value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    if (!loading) {
+      setLoading(true);
+      e.preventDefault();
+      try {
+        await axios.post('http://localhost:3000/api/', formData);
+        console.log("Send: ",formData);
+        setSuccess(true);
+        setSelected([]);
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          phone: '', // Optional
+          message: '',
+          preferredServices: selected, // Array for multiple checkboxes
+          time: 0, // Slider value
+        });
+      } catch(e:unknown) {
+        if (e instanceof Error) {
+          console.log("Error occurred:", e);
+          setError(true);
+        }
+      }finally {
+        setLoading(false);
+
+      }
+    }
+  };
+  const getModal = () => {
+    if (error) {
+
+      setError(false);
+      return <CModal state={false}/>
+    } else if (success) {
+      setSuccess(false);
+      return <CModal state={true}/>
+    }
+
+  }
+
+  const handleCheckBoxChange = (item: CheckBoxObj) => {
+    item.selected = !item.selected;
+  }
+
+  const btnContent = () => {
+    if (loading) {
+      return(
+        <Spinner size={"sm"} color="primary" labelColor="foreground"/>
+      )
+
+    }
+    return(
+      <svg
+        className="fill-white"
+        width="14"
+        height="14"
+        viewBox="0 0 14 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10.4767 6.16664L6.00668 1.69664L7.18501 0.518311L13.6667 6.99998L7.18501 13.4816L6.00668 12.3033L10.4767 7.83331H0.333344V6.16664H10.4767Z"
+          fill=""
+        />
+      </svg>
+    )
   }
 
   return (
     <>
-      {/* <!-- ===== Contact Start ===== --> */}
       <section id="support" className="px-4 md:px-8 2xl:px-0 mb-15">
         <div className="relative mx-auto max-w-c-1390 px-7.5 pt-10 lg:px-15 lg:pt-15 xl:px-20 xl:pt-20">
           <div className="absolute left-0 top-0 -z-1 h-2/3 w-full rounded-lg bg-gradient-to-t from-transparent to-[#dee7ff47] dark:bg-gradient-to-t dark:to-[#252A42]"></div>
@@ -54,25 +204,31 @@ const Contact = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top w-full rounded-lg bg-white p-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black md:w-3/5 lg:w-3/4 xl:p-15"
+              className="animate_top w-full rounded-lg bg-white p-7.5 shadow-solid-8 dark:border
+              dark:border-strokedark dark:bg-black md:w-3/5 lg:w-3/4 xl:p-15"
             >
               <h2 className="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
-                Kontakt
+                Fordern Sie den Preis für Ihr Projekt an
               </h2>
-
               <form
-                action="https://formbold.com/s/unique_form_id"
+                onSubmit={handleSubmit}
                 method="POST"
               >
                 <div className="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
                   <input
                     type="text"
+                    required
+                    name={"name"}
+                    onChange={handleChange}
                     placeholder="Name"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
 
                   <input
                     type="email"
+                    required
+                    name={"email"}
+                    onChange={handleChange}
                     placeholder="Email"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
@@ -81,48 +237,98 @@ const Contact = () => {
                 <div className="mb-12.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
                   <input
                     type="text"
+                    name={"subject"}
+                    onChange={handleChange}
                     placeholder="Betreff"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
 
                   <input
                     type="text"
+                    name={"tel"}
+                    onChange={handleChange}
                     placeholder="Telefon (optional)"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
                 </div>
-
-                <div className="mb-11.5 flex">
-                  <textarea
-                    placeholder="Ihr Anliegen"
-                    rows={4}
-                    className="w-full border-b border-stroke bg-transparent focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white"
-                  ></textarea>
+                <div className={"my-10 "}>
+                  <h3 className={"bold my-4"}>Dienstleistungen</h3>
+                  <div className={"flex gap-x-7 gap-y-3 flex-row"}>
+                    <CheckboxGroup
+                      onValueChange={setSelected}
+                      value={selected}>
+                      {checkBoxValues.map((item: CheckBoxObj, i: number) => (
+                        <Checkbox
+                          onChange={ () => handleCheckBoxChange(item) }
+                          isSelected={item.selected}
+                          value={item.title}
+                          key={i}>
+                          {item.title}
+                        </Checkbox>
+                      ))}
+                    </CheckboxGroup>
+                    <CheckboxGroup
+                      onValueChange={setSelected}
+                      value={selected}>
+                      {checkBoxValues2.map((item: CheckBoxObj, i: number) => (
+                        <Checkbox
+                          onChange={ () => handleCheckBoxChange(item) }
+                          isSelected={item.selected}
+                          value={item.title}
+                          key={i}>
+                          {item.title}
+                        </Checkbox>
+                      ))}
+                    </CheckboxGroup>
+                  </div>
                 </div>
-
+                <div className={"mb-10 gap-y-4"}>
+                  <Slider
+                    size="sm"
+                    onChangeEnd={(value:number) => handleSliderChange(value)}
+                    step={1}
+                    maxValue={24}
+                    minValue={1}
+                    label="Gewünschte Zeitspanne"
+                    defaultValue={24}
+                    value={formData.time}
+                    name={"time"}
+                    className="max-w-md"
+                    showSteps={true}
+                    marks={sliderMasrks}
+                  />
+                  <p className="text-default-500 mt-4 font-medium text-small">Monate: {formData.time}</p>
+                </div>
+                <div className="mb-11.5 flex flex-col">
+                  <h3 className={"bold my-4"}>Projektbeschreibung</h3>
+                  <textarea
+                    placeholder="Bitte beschreiben Sie kurz Ihr Projekt/Anliegen"
+                    rows={4}
+                    required
+                    name={"message"}
+                    onChange={handleChange}
+                    className="w-full border-b border-stroke bg-transparent focus:border-waterloo
+                      focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark
+                      dark:focus:border-manatee dark:focus:placeholder:text-white"
+                  >
+                    </textarea>
+                </div>
                 <div className="flex flex-wrap gap-4 xl:justify-between ">
 
 
                   <button
+                    type={"submit"}
                     aria-label="send message"
                     className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark"
                   >
                     Nachricht senden
-                    <svg
-                      className="fill-white"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.4767 6.16664L6.00668 1.69664L7.18501 0.518311L13.6667 6.99998L7.18501 13.4816L6.00668 12.3033L10.4767 7.83331H0.333344V6.16664H10.4767Z"
-                        fill=""
-                      />
-                    </svg>
+                    {
+                      btnContent()
+                    }
                   </button>
+
                 </div>
+
               </form>
             </motion.div>
 
@@ -164,36 +370,11 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      {/* <!-- ===== Contact End ===== --> */}
+      {
+        getModal()
+      }
     </>
   );
 };
 
 export default Contact;
-/*
- <h2 className="mb-12.5 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
-                Wir freuen uns auf Ihre Nachricht!
-              </h2>
-
-              <div className="5 mb-7">
-                <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Our Loaction
-                </h3>
-                <p>gggggcall_center.jpg</p>
-              </div>
-              <div className="5 mb-7">
-                <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Email Address
-                </h3>
-                <p>
-                  <a href="#">yourmail@domainname.com</a>
-                </p>
-              </div>
-               <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Phone Number
-                </h4>
-                <p>
-                  <a href="#">+009 42334 6343 843</a>
-                </p>
-                </p>
- */

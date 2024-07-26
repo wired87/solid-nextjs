@@ -8,6 +8,7 @@ import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
+import {NextUIProvider} from '@nextui-org/react'
 
 import ToasterContext from "../context/ToastContext";
 import React from "react";
@@ -25,12 +26,14 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="light"
         >
-          <Lines />
-          <Header />
-          <ToasterContext />
-          {children}
-          <Footer />
-          <ScrollToTop />
+          <NextUIProvider>
+            <Lines />
+            <Header />
+            <ToasterContext />
+            {children}
+            <Footer />
+            <ScrollToTop />
+          </NextUIProvider>
         </ThemeProvider>
       </body>
     </html>
