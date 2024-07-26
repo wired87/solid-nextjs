@@ -1,5 +1,4 @@
 //import {AccordionItem} from "@nextui-org/accordion";
-import IntegrationsContent from "@/components/Collapse/Content/integrationsTable";
 
 const SingleAccordeon = () => {
   return(

@@ -113,7 +113,7 @@ const Contact = () => {
       setLoading(true);
       e.preventDefault();
       try {
-        const res = await axios.post('http://localhost:3000/api/', formData);
+        const res = await axios.post('https://www.botworld.cloud/api/', formData);
         console.log("res: ",res);
         if (res.data.ok) {
           setSuccess(true);
@@ -259,7 +259,7 @@ const Contact = () => {
 
                   <input
                     type="text"
-                    name={"tel"}
+                    name={"phone"}
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="Telefon (optional)"
