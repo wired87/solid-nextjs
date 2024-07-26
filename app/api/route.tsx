@@ -11,7 +11,7 @@ export async function POST(req: any) {
     console.log("server stuff", formData)
     //const res = await sendMail(formData)
     const result = await resend.emails.send({
-      from: process.env.NEXT_PUBLIC_GMAIL,
+      from: "Acme <noreply@botworld.cloud>",
       to: [process.env.NEXT_PUBLIC_GMAIL],
       subject: formData.subject,
       react: EmailTemplate(formData),
