@@ -13,14 +13,16 @@ export async function sendMail(
    }: MailT
 ) {
 
-  const { NEXT_PUBLIC_GMAIL, NEXT_PUBLIC_GOOGLE_APP_PW } = process.env;
+  const { NEXT_PUBLIC_GMAIL, NEXT_PUBLIC_GOOGLE_APP_PW, NEXT_PUBLIC_BUSINESS_E_PW, NEXT_PUBLIC_BUSINESS_EMAIL } = process.env;
   console.log(`EMAIL ${NEXT_PUBLIC_GMAIL}`);
 
   const transport = nodemailer.createTransport({
-    service: "gmail",
+    host: 'smtps.udag.de',
+    port: 465,
+    secure: true,
     auth: {
-      user: NEXT_PUBLIC_GMAIL,
-      pass: NEXT_PUBLIC_GOOGLE_APP_PW,
+      user: NEXT_PUBLIC_BUSINESS_EMAIL,
+      pass: NEXT_PUBLIC_BUSINESS_E_PW,
     },
   });
   console.log("transport created:", transport)
