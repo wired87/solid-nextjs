@@ -1,15 +1,20 @@
 "use client";
 import React, {useEffect} from "react";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
+
 interface CMOdelT {
-  state: boolean;
+  updateState: () => void;
 }
 
-const  CModal: React.FC<CMOdelT> = ({state}) => {
+const  CModal: React.FC<CMOdelT> = (
+  {updateState}
+) => {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
   useEffect(() => {
     onOpen()
   }, []);
+
+
   return (
     <>
       <Modal
@@ -36,7 +41,10 @@ const  CModal: React.FC<CMOdelT> = ({state}) => {
                 </p>
               </ModalBody>
               <ModalFooter>
-                <Button color="primary" variant="light" onPress={onClose}>
+                <Button color="primary" variant="light" onPress={() => {
+                  onClose();
+                  updateState();
+                }}>
                   Close
                 </Button>
               </ModalFooter>

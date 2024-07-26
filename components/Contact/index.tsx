@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Checkbox, CheckboxGroup} from '@nextui-org/react';
 import {Slider} from "@nextui-org/slider";
 import {CheckBoxObj, MailT} from "@/types/contact";
@@ -79,6 +79,11 @@ const Contact = () => {
   const [success, setSuccess] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
 
+  const updateSuccessError = () => {
+    setError(false);
+    setSuccess(false);
+  }
+
   const [formData, setFormData] = useState<MailT>({
     name: '',
     email: '',
@@ -93,7 +98,12 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
+  useEffect(() => {
+    console.log("formData",formData);
+  }, [formData]);
+  useEffect(() => {
+    console.log("selected",selected);
+  }, [selected]);
   const handleSliderChange = (value: number) => {
     setFormData({ ...formData, time: value });
   };
@@ -103,19 +113,27 @@ const Contact = () => {
       setLoading(true);
       e.preventDefault();
       try {
-        await axios.post('http://localhost:3000/api/', formData);
-        console.log("Send: ",formData);
-        setSuccess(true);
-        setSelected([]);
-        setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          phone: '', // Optional
-          message: '',
-          preferredServices: selected, // Array for multiple checkboxes
-          time: 0, // Slider value
-        });
+        const res = await axios.post('http://localhost:3000/api/', formData);
+        console.log("res: ",res);
+        if (res.data.ok) {
+          setSuccess(true);
+          setError(false);
+          setSelected([]);
+          setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            phone: '',
+            message: '',
+            preferredServices: selected,
+            time: 0,
+          });
+        } else {
+          setError(true);
+          setSuccess(false);
+        }
+
+
       } catch(e:unknown) {
         if (e instanceof Error) {
           console.log("Error occurred:", e);
@@ -129,18 +147,11 @@ const Contact = () => {
   };
   const getModal = () => {
     if (error) {
-
-      setError(false);
-      return <CModal state={false}/>
+      return <CModal updateState={updateSuccessError} />
     } else if (success) {
-      setSuccess(false);
-      return <CModal state={true}/>
+      return <CModal updateState={updateSuccessError} />
     }
 
-  }
-
-  const handleCheckBoxChange = (item: CheckBoxObj) => {
-    item.selected = !item.selected;
   }
 
   const btnContent = () => {
@@ -255,12 +266,11 @@ const Contact = () => {
                   <h3 className={"bold my-4"}>Dienstleistungen</h3>
                   <div className={"flex gap-x-7 gap-y-3 flex-row"}>
                     <CheckboxGroup
+                      onChange={setSelected}
                       onValueChange={setSelected}
                       value={selected}>
                       {checkBoxValues.map((item: CheckBoxObj, i: number) => (
                         <Checkbox
-                          onChange={ () => handleCheckBoxChange(item) }
-                          isSelected={item.selected}
                           value={item.title}
                           key={i}>
                           {item.title}
@@ -272,8 +282,6 @@ const Contact = () => {
                       value={selected}>
                       {checkBoxValues2.map((item: CheckBoxObj, i: number) => (
                         <Checkbox
-                          onChange={ () => handleCheckBoxChange(item) }
-                          isSelected={item.selected}
                           value={item.title}
                           key={i}>
                           {item.title}
@@ -293,7 +301,7 @@ const Contact = () => {
                     defaultValue={24}
                     value={formData.time}
                     name={"time"}
-                    className="max-w-md"
+                    className="w-full"
                     showSteps={true}
                     marks={sliderMasrks}
                   />

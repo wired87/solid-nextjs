@@ -32,7 +32,6 @@ const getImageSec = (imageSec: ReactNode | string) => {
   )
 }
 export const getPoints = (points: string[] | undefined) => {
-  console.log("POINTS:", points?.length);
   if (points?.length) {
     return(
       <ul className={"grid grid-cols-2 gap-4 list-none text-left p-0 mt-5"}>
