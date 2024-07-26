@@ -1,9 +1,9 @@
 import React, {memo} from "react";
-import "../assets/terms-privacy.css"
+
 
 const Terms: React.FC = () => {
   return(
-    <div className="privacy-main bg-white text-black">
+    <div className="privacy-main bg-white text-black my-30 px-10">
       <div className="privacy-text-field">
         <p>
           We are Envision codingWizard Inc., conducting business under the trade name Botworld ("Company," "we," "us," "our," "service").
