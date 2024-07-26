@@ -2,6 +2,7 @@
 import {NextResponse} from "next/server";
 import {EmailTemplate} from "@/components/EmailTemplates/ToMe";
 import {Resend} from "resend";
+
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
 export async function POST(req: any) {
@@ -32,6 +33,7 @@ export async function POST(req: any) {
     )
   }
 }
+
 /*
  const result = await resend.emails.send({
       from: process.env.NEXT_PUBLIC_GMAIL, // Assuming you have these set in your .env.local file
