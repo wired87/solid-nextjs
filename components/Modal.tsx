@@ -4,10 +4,11 @@ import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDis
 
 interface CMOdelT {
   updateState: () => void;
+  state: boolean;
 }
 
 const  CModal: React.FC<CMOdelT> = (
-  {updateState}
+  {updateState, state}
 ) => {
 
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
@@ -15,7 +16,15 @@ const  CModal: React.FC<CMOdelT> = (
     onOpen()
   }, []);
 
+  const getHeading = () => {
+    return state ? "Das hat geklappt!" : "Da ist etwas schief gelaufen";
+  }
 
+  const getBody = () => {
+    return state? "Nachricht gesendet! \n Wir werden uns schnellstmöglich bei Ihnen melden!" : "Bitte überprüfen Sie Ihre Internetverbindung und \n versuchen es erneut."
+  }
+  const heading = getHeading();
+  const body = getBody();
   return (
     <>
       <Modal
@@ -35,10 +44,10 @@ const  CModal: React.FC<CMOdelT> = (
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Das hat geklappt!</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">{heading}</ModalHeader>
               <ModalBody>
                 <p className={"text-center"}>
-                  Nachricht gesendet! <br/> Wir werden uns schnellstmöglich bei Ihnen melden!
+                  {body}
                 </p>
               </ModalBody>
               <ModalFooter>
@@ -46,7 +55,7 @@ const  CModal: React.FC<CMOdelT> = (
                   onClose();
                   updateState();
                 }}>
-                  Close
+                  Schließen
                 </Button>
               </ModalFooter>
             </>

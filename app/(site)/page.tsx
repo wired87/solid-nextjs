@@ -31,7 +31,6 @@ export default function Home() {
       noContact={true}
       />
       <HomeMain />
-
     </main>
   );
 }

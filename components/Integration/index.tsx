@@ -12,7 +12,7 @@ const Integration = () => {
             headerInfo={{
               title: ``,
               subtitle: `Unser Tech Stack`,
-              description: `Erkunde alle`,
+              description: ``,
               link: true
             }}
           />

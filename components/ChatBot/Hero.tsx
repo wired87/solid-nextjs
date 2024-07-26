@@ -84,18 +84,8 @@ export default function Hero() {
 
         <div className="mb-6" />
 
-        {/* Buttons. */}
         <div className="flex flex-row items-center">
-          <a
-            href="https://github.com/bharathvaj-ganesan/chargebee-saas-stack"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex h-12 flex-row items-center rounded-xl border border-gray-600 px-6 text-base font-bold text-gray-200
-						transition hover:scale-105 hover:border-gray-200 hover:text-gray-100 active:opacity-80"
-          >
-            <div className="mx-1" />
-            Integrations
-          </a>
+
           <div className="mx-2" />
 
           <Link
@@ -112,6 +102,18 @@ export default function Hero() {
 
 
 /*
+
+<a
+            href="/chatbot/integrations"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-12 flex-row items-center rounded-xl border border-gray-600 px-6 text-base font-bold text-gray-200
+						transition hover:scale-105 hover:border-gray-200 hover:text-gray-100 active:opacity-80"
+          >
+            <div className="mx-1" />
+            Integrations
+          </a>
+
 <section className="mt-30 flex h-full flex-col items-center justify-center bg-black">
       <div className="relative flex flex-col items-center">
         <Image

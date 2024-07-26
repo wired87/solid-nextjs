@@ -133,7 +133,6 @@ const Contact = () => {
           setSuccess(false);
         }
 
-
       } catch(e:unknown) {
         if (e instanceof Error) {
           console.log("Error occurred:", e);
@@ -147,9 +146,9 @@ const Contact = () => {
   };
   const getModal = () => {
     if (error) {
-      return <CModal updateState={updateSuccessError} />
+      return <CModal state={false} updateState={updateSuccessError} />
     } else if (success) {
-      return <CModal updateState={updateSuccessError} />
+      return <CModal state={true} updateState={updateSuccessError} />
     }
 
   }
@@ -230,6 +229,7 @@ const Contact = () => {
                     type="text"
                     required
                     name={"name"}
+                    value={formData.name}
                     onChange={handleChange}
                     placeholder="Name"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
@@ -239,6 +239,7 @@ const Contact = () => {
                     type="email"
                     required
                     name={"email"}
+                    value={formData.email}
                     onChange={handleChange}
                     placeholder="Email"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
@@ -249,6 +250,8 @@ const Contact = () => {
                   <input
                     type="text"
                     name={"subject"}
+                    value={formData.subject}
+
                     onChange={handleChange}
                     placeholder="Betreff"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
@@ -257,6 +260,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name={"tel"}
+                    value={formData.phone}
                     onChange={handleChange}
                     placeholder="Telefon (optional)"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
@@ -297,7 +301,7 @@ const Contact = () => {
                     step={1}
                     maxValue={24}
                     minValue={1}
-                    label="Gewünschte Zeitspanne"
+                    label="Gewünschte Zeitspanne ( Monate )"
                     defaultValue={24}
                     value={formData.time}
                     name={"time"}
@@ -305,14 +309,13 @@ const Contact = () => {
                     showSteps={true}
                     marks={sliderMasrks}
                   />
-                  <p className="text-default-500 mt-4 font-medium text-small">Monate: {formData.time}</p>
                 </div>
                 <div className="mb-11.5 flex flex-col">
-                  <h3 className={"bold my-4"}>Projektbeschreibung</h3>
+                  <h3 className={"mb-2 bold my-4 underline-offset-2"}>Projektbeschreibung</h3>
                   <textarea
                     placeholder="Bitte beschreiben Sie kurz Ihr Projekt/Anliegen"
-                    rows={4}
                     required
+                    value={formData.message}
                     name={"message"}
                     onChange={handleChange}
                     className="w-full border-b border-stroke bg-transparent focus:border-waterloo
