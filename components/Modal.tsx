@@ -9,6 +9,7 @@ interface CMOdelT {
 const  CModal: React.FC<CMOdelT> = (
   {updateState}
 ) => {
+
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
   useEffect(() => {
     onOpen()

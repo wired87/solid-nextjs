@@ -32,7 +32,7 @@ const ChatBotMain = async () => {
         </b>
       </div>
       <ChatBotNeed />
-      <CTA />
+      <CTA trustImg={"/images/trust/hammad.jpeg"} />
       <FAQ data={botFaqData} />
       <Contact />
     </>

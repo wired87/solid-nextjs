@@ -11,13 +11,15 @@ interface CTAT {
   image?: ReactNode;
   btnText?: string;
   href?: string;
+  trustImg?: string;
 }
 
 const validateProps = (heading,
                        des,
                        image,
                        btnText,
-                       href
+                       href,
+                       trustImg
 ) => {
   if (!heading || !des || !image || !btnText) {
     return {
@@ -26,7 +28,7 @@ const validateProps = (heading,
       image: <Image
         width={210}
         height={300}
-        src="/images/trust/bene_bg.png"
+        src={trustImg || "/images/trust/bene_bg.png"}
         alt="Arrow"
         className=""
       />,
@@ -56,11 +58,12 @@ const CTA: React.FC<CTAT> = (
     des,
     image,
     btnText,
-    href
+    href,
+    trustImg
   }
 ) => {
 
-  const r = validateProps(heading, des, image, btnText, href)
+  const r = validateProps(heading, des, image, btnText, href, trustImg)
 
   return (
       <section className="overflow-hidden px-4 py-20 md:px-8 lg:py-25 xl:py-30 2xl:px-0">
