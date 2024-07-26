@@ -7,7 +7,9 @@ const Imprint = () => {
           <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-[23px] gap-[80px]">
             <div className="self-stretch flex flex-col items-start justify-start gap-[6px]">
               <div className="self-stretch relative font-semibold">
-                Imprint
+                <h2 className="relative text-3xl font-bold text-black dark:text-white xl:text-hero">
+                  Impressum
+                </h2>
               </div>
             </div>
             <div className="self-st2retch flex flex-col items-start justify-end gap-[20px] text-base text-dimgray-300">
@@ -15,7 +17,7 @@ const Imprint = () => {
                 <img
                   className="w-6 relative h-6 overflow-hidden shrink-0"
                   alt=""
-                  src="/comp.svg"
+                  src="/images/imprint/comp.svg"
                 />
                 <div className="flex-1 relative">codingWizard</div>
               </div>
@@ -24,7 +26,7 @@ const Imprint = () => {
                   <img
                     className="w-6 relative h-6 overflow-hidden shrink-0"
                     alt=""
-                    src="/person.svg"
+                    src="/images/imprint/person.svg"
                   />
                   <div className="flex-1 relative">Benedikt Sterra</div>
                 </div>
@@ -32,7 +34,7 @@ const Imprint = () => {
                   <img
                     className="w-6 relative h-6 overflow-hidden shrink-0"
                     alt=""
-                    src="/bxsphonecall.svg"
+                    src="/images/imprint/bxsphonecall.svg"
                   />
                   <div className="flex-1 relative">+49 176 73 86 79 52</div>
                 </div>
@@ -40,25 +42,21 @@ const Imprint = () => {
                   <img
                     className="w-6 relative h-6 overflow-hidden shrink-0"
                     alt=""
-                    src="/icsharpemail.svg"
+                    src="/images/imprint/icsharpemail.svg"
                   />
                   <div className="flex-1 relative">info@botworld.cloud</div>
                 </div>
                 <div className="self-stretch flex flex-row items-start justify-start gap-[25px]">
                   <div className="overflow-hidden flex flex-row items-start justify-start py-0.5 px-1 relative gap-[10px]">
                     <img
-                      className="w-[16.5px] relative h-[21px] z-[0]"
+                      className="w-6 relative h-6 overflow-hidden shrink-0"
                       alt=""
-                      src="/vector4.svg"
-                    />
-                    <img
-                      className="w-[24.9%] absolute !m-[0] h-[25.2%] top-[28%] right-[37.55%] bottom-[46.8%] left-[37.55%] max-w-full overflow-hidden max-h-full z-[1]"
-                      alt=""
+                      src="/images/imprint/location.svg"
                     />
                   </div>
                   <div className="flex-1 relative">
                     Klingestr. 22, 01159 Dresden
-                    Germany
+                    Deutschland
                   </div>
                 </div>
               </div>
