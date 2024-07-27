@@ -112,8 +112,8 @@ const Contact = () => {
     if (!loading) {
       setLoading(true);
       e.preventDefault();
-      try { //   'http://localhost:3000/api/'
-        const res = await axios.post('https://www.botworld.cloud/api/', formData);
+      try { // 'http://localhost:3000/api/' 'https://www.botworld.cloud/api/'
+        const res = await axios.post('http://localhost:3000/api/', formData);
         console.log("res: ",res);
         if (res.data.ok) {
           setSuccess(true);
