@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React, {useEffect, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import {Checkbox, CheckboxGroup} from '@nextui-org/react';
 import {Slider} from "@nextui-org/slider";
 import {CheckBoxObj, MailT} from "@/types/contact";
@@ -109,6 +109,8 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    setError(false);
+    setSuccess(false);
     if (!loading) {
       setLoading(true);
       e.preventDefault();
@@ -144,13 +146,13 @@ const Contact = () => {
       }
     }
   };
-  const getModal = () => {
+  const getModal = useCallback(() => {
     if (error) {
       return <CModal state={false} updateState={updateSuccessError} />
     } else if (success) {
       return <CModal state={true} updateState={updateSuccessError} />
     }
-  }
+  }, [error, success]);
 
   const btnContent = () => {
     if (loading) {
