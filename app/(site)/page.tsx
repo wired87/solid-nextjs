@@ -6,11 +6,8 @@ import Image from "next/image";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
-  description: "This is Home for Solid Pro",
-  // other metadata
-
-
+  title: "Individuelle Softwareentwicklung by BotWorld.cloud",
+  description: "Homepage for BotWorld.cloud",
 }
 
 export default function Home() {

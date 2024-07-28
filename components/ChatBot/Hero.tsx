@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="relative flex flex-col items-center">
         <Image
           src="/images/bot_hero/cal.svg"
-          alt="Next JS"
+          alt="uhu.ong"
           width={100}
           height={100}
           className="float absolute top-[5%] left-[25%] h-16 w-28 select-none opacity-60 grayscale hue-rotate-180 invert transition
