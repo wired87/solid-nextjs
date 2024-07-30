@@ -12,7 +12,8 @@ export const botFaqData: FAQ[] = [
   },{
     id: 321,
     quest: "Was genau beinhaltet Ihr Service?",
-    ans: "Wir erstellen wir mit Ihnen einen Plan welcher optimal zu Ihrem Unternehmen passt." +
+    ans: "Wir beraten Sie in vollem Umfang über jegliche Möglichkeiten welche sich Ihnen eröffnen und " +
+      "erstellen auf Basis dessen mit Ihnen einen Plan welcher optimal zu Ihrem Unternehmen passt ." +
       "",
   },{
     id: 99,

@@ -6,16 +6,17 @@ export const homeFeaturesData: Feature[] = [
     icon: "/images/icon/icon-01.svg",
     title: "Web Development",
     description:
-      "Der erste Eindruck zählt. Wir legen größten Wert auf eine Ansprechende Benutzeroberfläche. " +
-      "Dabei arbeiten wir mit Hilfe neuester Technologien um unseren Kunden nur das " +
-      "bestmögliche Ergebnis zu präsentieren.",
+      "Der erste Eindruck zählt. Wir legen größten Wert auf eine ansprechende Benutzeroberfläche. " +
+      "Dabei arbeiten wir mit Hilfe neuster Technologien um unseren Kunden das " +
+      "bestmögliche Ergebnis zu liefern.",
   },
   {
     id: 6,
     icon: "/images/icon/icon-06.svg",
     title: "KI",
     description:
-      "Wir schreiben das Wort AUTOMATISIERUNG ganz groß. Unsere Mitarbeiter entwickeln für Ihr Unternehmen die Lösungen welche bestmöglich zu Ihren Bedürfnissen passen.",
+      "Wir schreiben das Wort AUTOMATISIERUNG ganz groß. " +
+      "Unsere Mitarbeiter entwickeln für Ihr Unternehmen die Lösungen, die bestmöglich zu Ihren Bedürfnissen passen.",
   },
   {
     id: 2,
@@ -25,7 +26,7 @@ export const homeFeaturesData: Feature[] = [
       "Bei der Entwicklung Ihrer individuellen Software gestalten unsere " +
       "Experten eine ansprechende und benutzerfreundliche Oberfläche. " +
       "Dabei legen wir Wert auf visuelles, interaktives und zeitgemäßes Design, " +
-      "um eine hohe Nutzerzufriedenheit zu gewährleisten.",
+      "um hohe Nutzerzufriedenheit zu gewährleisten.",
   },
   {
     id: 3,
@@ -40,7 +41,7 @@ export const homeFeaturesData: Feature[] = [
     icon: "/images/icon/icon-04.svg",
     title: "Cloud hosting",
     description:
-      "Erhöhen Sie die Sie die Skalierbarkeit, Elastizität und Verfügbarkeit Ihrer Software durch unsere Partner Cloud Services",
+      "Erhöhen Sie die Skalierbarkeit, Elastizität und Verfügbarkeit Ihrer Software durch unsere Partner-Cloud-Services.",
   },
   {
     id: 5,

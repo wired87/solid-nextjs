@@ -8,8 +8,8 @@ import Contact from "@/components/Contact";
 const headerInfo= {
   title: "Wo sind wir die besten",
   subtitle: "Unsere Spezialgebiete",
-  description: `Software is vielseitig. 
-  Durch unsere Expertise und Erfahrung decken wir ein breites spektrum an möglichkeiten ab um Ihr Projekt umzusetzen `,
+  description: `Software ist vielseitig. 
+  Durch unsere Expertise und Erfahrung decken wir ein breites Spektrum an Möglichkeiten ab, um Ihr Projekt optimal umzusetzen.`,
 }
 //       <Testimonial />
 const HomeMain = () => {

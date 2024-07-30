@@ -42,7 +42,7 @@ const checkBoxValues2: CheckBoxObj[] =[
     title: "Chat Bot",
     selected: false
   },{
-    title: "SEO optimierung",
+    title: "SEO-Optimierung",
     selected: false
   },
 ]
@@ -376,7 +376,7 @@ const Contact = () => {
                <Image height={100} width={100} alt={"hello_call_center"} className={"object-contain mb-5"} src={"/images/contact/call_center.jpg"}/>
               </div>
               <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                Email Addresse
+                E-Mail-Adresse
               </h3>
               <p>
                 <a href="#">info@botworld.cloud</a>
