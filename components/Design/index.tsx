@@ -50,6 +50,7 @@ const ImageSection = () => {
   return(
     <div className={"flex relative justify-center items-center"}>
       <Image
+        priority
         src="/images/shape/shape-01.png"
         alt="shape"
         width={46}
@@ -57,6 +58,7 @@ const ImageSection = () => {
         className="absolute right-2 bottom-2"
       />
       <Image
+        priority
         src="/images/shape/shape-04.png"
         alt="shape"
         width={100}
@@ -64,13 +66,15 @@ const ImageSection = () => {
         className="absolute left-4 bottom-0"
       />
       <Image
+        priority
         src="/images/shape/shape-05.png"
         alt="shape"
         width={46}
         height={246}
         className="absolute top-6 left-7"
       /> <Image
-        src="/images/shape/shape-06.png"
+      priority
+      src="/images/shape/shape-06.png"
         alt="shape"
         width={300}
         height={246}

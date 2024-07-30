@@ -44,6 +44,7 @@ export const MainContent = () => {
         headingOne={"Unser Team"}
         headingTwo={""}
         imageSec={<Image
+          priority
           src={"/images/trust/net.jpg"}
           alt={"https://static.vecteezy.com/system/resources/previews/002/459/900/non_2x/social-network-people-connecting-all-over-the-world-flat-illustration-free-vector.jpg"}
           width={600}

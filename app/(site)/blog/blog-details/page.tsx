@@ -79,9 +79,11 @@ const SingleBlogPage = async () => {
                 <div className="mb-10 w-full overflow-hidden ">
                   <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                     <Image
+                      priority
                       src={"/images/blog/blog-01.png"}
                       alt="Kobe Steel plant that supplied"
                       fill
+                      placeholder={"blur"}
                       className="rounded-md object-cover object-center"
                     />
                   </div>
