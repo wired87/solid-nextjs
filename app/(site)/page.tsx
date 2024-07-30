@@ -13,7 +13,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <Hero  explanationOrComponent={"Wir unterstützen Unternehmen dabei, neue Ziele zu erreichen, indem wir modernste Software, maßgeschneiderte Lösungen und KI-basierte Anwendungen entwickeln und integrieren. Unser erfahrenes Team steht Ihnen dabei mit professioneller Beratung und Umsetzung zur Seite."}
+      <Hero  explanationOrComponent={"Wir unterstützen Unternehmen dabei, neue Ziele zu erreichen, " +
+        "indem wir modernste Software, maßgeschneiderte Lösungen und KI-basierte Anwendungen entwickeln " +
+        "und integrieren. Unser erfahrenes Team steht Ihnen dabei mit professioneller Beratung und Umsetzung zur Seite."}
              imageOrSection={
                <Image
                  src="/images/trust/staff.jpeg"
@@ -23,7 +25,7 @@ export default function Home() {
                  className="object-contain"
                />
         }
-             mainHeading={"Individuelle Software entwicklung"}
+             mainHeading={"Individuelle Software Entwicklung"}
              smallHeading={""}
       noContact={true}
       />
