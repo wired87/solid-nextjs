@@ -41,6 +41,9 @@ const checkBoxValues2: CheckBoxObj[] =[
   },{
     title: "Chat Bot",
     selected: false
+  },{
+    title: "SEO optimierung",
+    selected: false
   },
 ]
 
