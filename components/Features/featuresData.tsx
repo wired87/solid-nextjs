@@ -15,21 +15,25 @@ export const homeFeaturesData: Feature[] = [
     icon: "/images/icon/icon-06.svg",
     title: "KI",
     description:
-      "Wir schreiben das Wort AUTOMATISIERUNG ganz groß. Unsere Mitarbeiter entwickeln für Ihr unternehmen die Lösungen welche bestmöglich zu Ihren Bedürfnissen passen.",
+      "Wir schreiben das Wort AUTOMATISIERUNG ganz groß. Unsere Mitarbeiter entwickeln für Ihr Unternehmen die Lösungen welche bestmöglich zu Ihren Bedürfnissen passen.",
   },
   {
     id: 2,
     icon: "/images/icon/icon-02.svg",
     title: "Mobile Development",
     description:
-      "Bei der Entwicklung von Individualsoftware gestalten unsere Experten ein ansprechendes und benutzerfreundliches UI/UX für Ihre Software. Dieses umfasst visuelles, interaktives und informatives Design und garantiert somit hohe Zufriedenheit",
+      "Bei der Entwicklung Ihrer individuellen Software gestalten unsere " +
+      "Experten eine ansprechende und benutzerfreundliche Oberfläche. " +
+      "Dabei legen wir Wert auf visuelles, interaktives und zeitgemäßes Design, " +
+      "um eine hohe Nutzerzufriedenheit zu gewährleisten.",
   },
   {
     id: 3,
     icon: "/images/icon/icon-03.svg",
     title: "SEO",
     description:
-      "Ab auf die 1! Wir arbeiten mit hoch effektiven SEO tools um Ihre Website nach ganz oben in den Google Rankings zu pushen. ",
+      "Ab auf die 1! Unsere Expertise in Website Optimierungstechniken durften wir in der " +
+      "Vergangenheit mehrfach erfolgreich unter Beweis stellen.",
   },
   {
     id: 4,
@@ -43,7 +47,7 @@ export const homeFeaturesData: Feature[] = [
     icon: "/images/icon/icon-05.svg",
     title: "Unterstützung & Support",
     description:
-      "Unsere Experten aus Berlin arbeiten in engem Zusammenhang mit Ihnen, um sicherzustellen, dass Ihre Geschäfts- oder Unternehmensinfrastruktur auf allen drei Supportebenen optimal betreut wird. Darüber hinaus überwachen wir alle Supportkanäle rund um die Uhr.",
+      "Unser Team arbeitet eng mit Ihnen zusammen, um sicherzustellen, dass Ihre Geschäfts- oder Unternehmensinfrastruktur auf allen Ebenen optimal betreut wird. Dazu gehört auch eine 24/7-Überwachung aller Supportkanäle.",
   },
 
 ];
@@ -62,7 +66,7 @@ export const workWithUsFeaturesData: Feature[] = [
     icon: "/images/icon/icon-06.svg",
     title: "Team",
     description:
-      "Nutzen Sie das Know-how eines erfahrenen Webentwicklungsteams mit mehreren Jahren Expertise.",
+      "Nutzen Sie das Know-how eines erfahrenen Entwickler- Teams mit mehreren Jahren Expertise.",
   },
   {
     id: 2,
@@ -107,21 +111,22 @@ export const workWithUsUIFeaturesData: Feature[] = [
     icon: "/images/icon/icon-06.svg",
     title: "Fachwissen",
     description:
-      "Nutzen Sie das Know-how eines erfahrenen Webentwicklungsteams mit mehreren Jahren Expertise.",
+      "Nutzen Sie das Know-how eines erfahrenen Entwickler - Teams mit mehreren Jahren Expertise.",
   },
   {
     id: 2,
     icon: "/images/icon/icon-02.svg",
     title: "Benutzerfreundlichkeit",
     description:
-      "Gestalten Sie intuitive Benutzeroberflächen, die begeistern und im Gedächtnis bleiben.",
+      "Wir gestalten intuitive Benutzeroberflächen, die begeistern und im Gedächtnis bleiben.",
   },
   {
     id: 3,
     icon: "/images/icon/icon-03.svg",
     title: "Weiterentwicklung",
     description:
-      "Unsere nutzerzentrierten Lösungen überzeugen durch modernste Technologien und intuitive Bedienung. Wir entwickeln für Ihre Bedürfnisse.",
+      "Unsere Lösungen überzeugen durch modernste Technologien und intuitive Bedienung. " +
+      "Wir entwickeln für Ihre Bedürfnisse.",
   },
   {
     id: 4,
@@ -139,50 +144,5 @@ export const workWithUsUIFeaturesData: Feature[] = [
   },
 ];
 
-export const workWithUsMVPFeaturesData: Feature[] = [
-  {
-    id: 1,
-    icon: "/images/icon/icon-01.svg",
-    title: "Forschung",
-    description:
-      "Wir treffen datenbasierte Entscheidungen in jeder Phase der MVP-Entwicklung, um Ihr Produkt " +
-      "kontinuierlich zu optimieren und erfolgreich am Markt zu etablieren.",
-  },
-  {
-    id: 6,
-    icon: "/images/icon/icon-06.svg",
-    title: "Marktgerecht",
-    description:
-      "Wir entwickeln Produkte, die sowohl die Anforderungen des Marktes erfüllen als auch den Bedürfnissen der Nutzer gerecht werden.",
-  },
-  {
-    id: 2,
-    icon: "/images/icon/icon-02.svg",
-    title: "Validierung",
-    description:
-      "Jede Idee wird rigoros getestet und iterativ weiterentwickelt, um ihr volles Potenzial auszuschöpfen und ein erfolgreiches Produkt zu schaffen."
-  },
-  {
-    id: 3,
-    icon: "/images/icon/icon-03.svg",
-    title: "Experten",
-    description:
-      "Ein Team technischer Experten mit branchenübergreifendem Know-how.",
-  },
-  {
-    id: 4,
-    icon: "/images/icon/icon-04.svg",
-    title: "Wettbewerbsfähigkeit",
-    description:
-      "Unsere maßgeschneiderten MVP-Entwicklungslösungen sind einzigartig und heben Ihr Produkt von der Konkurrenz ab.",
-  },
-  {
-    id: 5,
-    icon: "/images/icon/icon-05.svg",
-    title: "Reputation",
-    description:
-      "Zahlreiche zufriedene Kunden und unabhängige Quellen bestätigen die Qualität unserer Arbeit.",
-  },
-];
 
 
