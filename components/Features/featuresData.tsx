@@ -8,7 +8,7 @@ export const homeFeaturesData: Feature[] = [
     description:
       "Der erste Eindruck zählt. Wir legen größten Wert auf eine Ansprechende Benutzeroberfläche. " +
       "Dabei arbeiten wir mit Hilfe neuester Technologien um unseren Kunden nur das " +
-      "bestmögliche Ergebniss zu präsentieren.",
+      "bestmögliche Ergebnis zu präsentieren.",
   },
   {
     id: 6,
@@ -47,7 +47,8 @@ export const homeFeaturesData: Feature[] = [
     icon: "/images/icon/icon-05.svg",
     title: "Unterstützung & Support",
     description:
-      "Unser Team arbeitet eng mit Ihnen zusammen, um sicherzustellen, dass Ihre Geschäfts- oder Unternehmensinfrastruktur auf allen Ebenen optimal betreut wird. Dazu gehört auch eine 24/7-Überwachung aller Supportkanäle.",
+      "Unser Team arbeitet eng mit Ihnen zusammen, um sicherzustellen, dass Ihre Geschäfts- oder" +
+      " Unternehmensinfrastruktur auf allen Ebenen optimal und rund um die Uhr betreut wird.",
   },
 
 ];

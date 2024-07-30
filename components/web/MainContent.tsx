@@ -9,8 +9,6 @@ import React from "react";
 import Feature from "@/components/Features";
 import {workWithUsFeaturesData} from "@/components/Features/featuresData";
 
-
-
 const exp: string = "Kundenzufriedenheit ist unser höchstes Ziel. " +
   "Daher nutzen wir nicht nur die fortschrittlichsten KI-Tools, um unseren Workflow zu optimieren, " +
   "sondern setzen auch auf kontinuierlichen Austausch und enge Zusammenarbeit, um unseren Kunden" +
@@ -18,7 +16,7 @@ const exp: string = "Kundenzufriedenheit ist unser höchstes Ziel. " +
 
 const headerInfo = {
   title: "",
-  subtitle: "Warum Sie mit uns zusammenarbeiten sollten",
+  subtitle: "Warum Sie mit uns zusammen arbeiten sollten",
   description: "",
   link: false
 }
