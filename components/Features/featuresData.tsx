@@ -6,7 +6,9 @@ export const homeFeaturesData: Feature[] = [
     icon: "/images/icon/icon-01.svg",
     title: "Web Development",
     description:
-      "Der erste Eindruck zählt. Eine Ansprechende Benutzeroberfläche dabei arbeiten wir mit hilfe neuester und fortschrittlichster Technologie um für Ihre kunden das bestmögliche Ergebniss zu gewährleisten.",
+      "Der erste Eindruck zählt. Wir legen größten Wert auf eine Ansprechende Benutzeroberfläche. " +
+      "Dabei arbeiten wir mit Hilfe neuester Technologien um unseren Kunden nur das " +
+      "bestmögliche Ergebniss zu präsentieren.",
   },
   {
     id: 6,
