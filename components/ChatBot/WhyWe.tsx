@@ -39,8 +39,8 @@ const middleSection = {
 const bottomSection = {
   imageSec: "/images/bot/chnnels.jpg", // "https://static.vecteezy.com/system/resources/previews/004/112/841/original/facebook-instagram-and-telegram-logo-free-vector.jpg",
   headingOne: "",
-  headingTwo: "Multi Channel verfügbarkeit",
-  exp: "Keine Einschränkungen! Unser Bot ist auf den gängigsten Plattformen integrierbar",
+  headingTwo: "Multi Channel Verfügbarkeit",
+  exp: "Keine Einschränkungen! Unser Bot ist in die gängigsten Plattformen integrierbar",
   points: [
     "Instagram",
     "Facebook Messenger",

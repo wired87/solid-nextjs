@@ -13,7 +13,7 @@ export const mobileTabData: FeatureTab[] = [
     id: "tabTwo",
     title: "Swift/Objective C",
     desc1: `Wir entwickeln skalierbare mobile Applikationen für iOS mit einer angenehmen User Experience, die einen bleibenden Eindruck hinterlässt.`,
-    desc2: `Beider Planung arbeiten wir eng mit unseren Kunden zusammen um für sie die optimale Lösung zu finden.`,
+    desc2: `Bei der Planung arbeiten wir eng mit unseren Kunden zusammen um für sie die optimale Lösung zu finden.`,
     image: "/images/mobile/nft.jpg", //"https://unblast.com/wp-content/uploads/2024/07/iPhone-15-Pro-Max-Mockup-3.jpg",
     imageDark: "/images/mobile/nft.jpg",
   },
@@ -64,7 +64,7 @@ export const webTabData: FeatureTab[] = [
   {
     id: "tabTwo",
     title: "Websites",
-    desc1: "Wir schaffen bleibende Eindrücke mit gut optimierten und effizienten Websites. Beider Planung arbeiten wir eng mit unseren Kunden zusammen um für Sie die optimale Lösung zu finden.",
+    desc1: "Wir schaffen bleibende Eindrücke mit gut optimierten und effizienten Websites. Bei der Planung arbeiten wir eng mit unseren Kunden zusammen um für Sie die optimale Lösung zu finden.",
     desc2: [
       "Unternehmens-Websites",
       "UI/UX Design & Branding",

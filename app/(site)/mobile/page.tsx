@@ -6,6 +6,7 @@ import React from "react";
 import FeaturesTab from "@/components/FeaturesTab";
 import CTA from "@/components/CTA";
 import {mobileTabData} from "@/components/FeaturesTab/featuresTabData";
+import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
   title: "UI/UX Design",
@@ -64,6 +65,7 @@ const Mobile = () => {
           data={mobileTabData}
       />
       <CTA />
+      <Contact />
     </>
   );
 }

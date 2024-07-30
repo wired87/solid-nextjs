@@ -19,7 +19,7 @@ const ChatBotMain = async () => {
   const heading = {
     title: "Info",
     subtitle: "Was zeichnet einen Support Agenten aus",
-    description: "Support Agenten unterstützen schon heute den Geschäftsablauf unzähliger Unternehmen." +
+    description: "Support Agenten unterstützen schon heute den Geschäftsablauf unzähliger Unternehmen. " +
       "Erleben auch Sie die Vorteile eines maßgeschneiderten KI Agenten",
     link: false,
   }

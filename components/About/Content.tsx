@@ -9,7 +9,7 @@ import React from "react";
 import Image from "next/image"
 import CTA from "@/components/CTA";
 const exp: string = "\n" +
-  "Wir arbeiten mit einem kleinen Netzwerk ausgewählter Top-Freelancer und Freiberufler in ganz Deutschland zusammen, " +
+  "Wir arbeiten mit einem kleinen Netzwerk ausgewählter Top-Freelancer und Freiberuflern in ganz Deutschland zusammen, " +
   "die sich durch ihre Expertise, Zuverlässigkeit und Leidenschaft für innovative " +
   "Lösungen auszeichnen. Gemeinsam stellen wir sicher, dass Ihr Projekt in den besten Händen " +
   "ist und von einem Team profitiert, das Ihre individuellen Anforderungen versteht und optimal umsetzt.";
