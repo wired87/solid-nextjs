@@ -25,9 +25,9 @@ export const homeFeaturesData: Feature[] = [
   {
     id: 3,
     icon: "/images/icon/icon-03.svg",
-    title: "Backend",
+    title: "SEO",
     description:
-      "Wir erstellen Ihr hoch skalierbares, robustes Backend mit allem was dazu gehört: Datenbank Management, CRM, API Erstellung und integration uvm.",
+      "Ab auf die 1! Wir arbeiten mit hoch effektiven SEO tools um Ihre Website nach ganz oben in den Google Rankings zu pushen. ",
   },
   {
     id: 4,
