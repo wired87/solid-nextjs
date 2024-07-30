@@ -24,7 +24,7 @@ const g = {
   title: "Mid-Level",
   subtitle: "Unser Netzwerk",
   description: `Profitieren Sie von unserem bewährten und sorgfältig ausgesuchtem 
-  Partnernetzwerk von in Deutschland ansässigen Freiberuflern welches Sich in der 
+  Partnernetzwerk von in Deutschland ansässigen Freiberuflern welche in der 
   Vergangenheit häufig einen Wertvollen Beitrag geleistet haben.
   `,
 }
