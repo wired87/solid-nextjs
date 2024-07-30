@@ -9,7 +9,7 @@ import React from "react";
 import Image from "next/image"
 import CTA from "@/components/CTA";
 const exp: string = "\n" +
-  "Wir arbeiten mit einem kleinen Netzwerk ausgewählter Top-Freelancer und Freiberuflern in ganz Deutschland zusammen, " +
+  "Wir arbeiten mit einem kleinen Netzwerk ausgewählter Top-Freelancer und Freiberufler in ganz Deutschland zusammen, " +
   "die sich durch ihre Expertise, Zuverlässigkeit und Leidenschaft für innovative " +
   "Lösungen auszeichnen. Gemeinsam stellen wir sicher, dass Ihr Projekt in den besten Händen " +
   "ist und von einem Team profitiert, das Ihre individuellen Anforderungen versteht und optimal umsetzt.";
@@ -23,12 +23,11 @@ const headerInfo = {
 const g = {
   title: "Mid-Level",
   subtitle: "Unser Netzwerk",
-  description: `Profitieren Sie von unserem bewährten und sorgfältig ausgesuchtem 
-  Partnernetzwerk von in Deutschland ansässigen Freiberuflern welche in der 
-  Vergangenheit häufig einen Wertvollen Beitrag geleistet haben.
+  description: `Profitieren Sie von unserem bewährten und sorgfältig ausgesuchten 
+  Partnernetzwerk von in Deutschland ansässigen Freiberuflern, welche in der 
+  Vergangenheit häufig einen wertvollen Beitrag geleistet haben.
   `,
 }
-
 export const MainContent = () => {
   return(
     <>
@@ -55,7 +54,7 @@ export const MainContent = () => {
             "3-köpfiges Führungsteam",
             "Umfangreiche Erfahrungen und Fähigkeiten",
             "Hoch Qualifizierte Freiberufler",
-            "Jeder Technologie skill mehrfach vertreten",
+            "Jede gängige Technologie mehrfach vertreten",
             "Top Experten aus jedem Gebiet",
           ]
         }

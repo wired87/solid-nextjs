@@ -7,7 +7,7 @@ export const homeFeaturesData: Feature[] = [
     title: "Web Development",
     description:
       "Der erste Eindruck zählt. Wir legen größten Wert auf eine ansprechende Benutzeroberfläche. " +
-      "Dabei arbeiten wir mit Hilfe neuster Technologien um unseren Kunden das " +
+      "Dabei arbeiten wir mit Hilfe neuester Technologien, um unseren Kunden das " +
       "bestmögliche Ergebnis zu liefern.",
   },
   {
@@ -15,7 +15,7 @@ export const homeFeaturesData: Feature[] = [
     icon: "/images/icon/icon-06.svg",
     title: "KI",
     description:
-      "Wir schreiben das Wort AUTOMATISIERUNG ganz groß. " +
+      "Wir schreiben das Wort AUTOMATISIERUNG groß. " +
       "Unsere Mitarbeiter entwickeln für Ihr Unternehmen die Lösungen, die bestmöglich zu Ihren Bedürfnissen passen.",
   },
   {
@@ -33,13 +33,13 @@ export const homeFeaturesData: Feature[] = [
     icon: "/images/icon/icon-03.svg",
     title: "SEO",
     description:
-      "Ab auf die 1! Unsere Expertise in Website Optimierungstechniken durften wir in der " +
+      "Ab auf die 1! Unsere Expertise in Website-Optimierungstechniken durften wir in der " +
       "Vergangenheit mehrfach erfolgreich unter Beweis stellen.",
   },
   {
     id: 4,
     icon: "/images/icon/icon-04.svg",
-    title: "Cloud hosting",
+    title: "Cloud Hosting",
     description:
       "Erhöhen Sie die Skalierbarkeit, Elastizität und Verfügbarkeit Ihrer Software durch unsere Partner-Cloud-Services.",
   },
@@ -48,12 +48,10 @@ export const homeFeaturesData: Feature[] = [
     icon: "/images/icon/icon-05.svg",
     title: "Unterstützung & Support",
     description:
-      "Unser Team arbeitet eng mit Ihnen zusammen, um sicherzustellen, dass Ihre Geschäfts- oder" +
-      " Unternehmensinfrastruktur auf allen Ebenen optimal und rund um die Uhr betreut wird.",
+      "Unser Team arbeitet eng mit Ihnen zusammen, um sicherzustellen, dass Ihre Geschäfts- oder " +
+      "Unternehmensinfrastruktur auf allen Ebenen optimal und rund um die Uhr betreut wird.",
   },
-
 ];
-
 
 export const workWithUsFeaturesData: Feature[] = [
   {
@@ -68,7 +66,7 @@ export const workWithUsFeaturesData: Feature[] = [
     icon: "/images/icon/icon-06.svg",
     title: "Team",
     description:
-      "Nutzen Sie das Know-how eines erfahrenen Entwickler- Teams mit mehreren Jahren Expertise.",
+      "Nutzen Sie das Know-how eines erfahrenen Entwickler-Teams mit mehreren Jahren Expertise.",
   },
   {
     id: 2,
@@ -113,7 +111,7 @@ export const workWithUsUIFeaturesData: Feature[] = [
     icon: "/images/icon/icon-06.svg",
     title: "Fachwissen",
     description:
-      "Nutzen Sie das Know-how eines erfahrenen Entwickler - Teams mit mehreren Jahren Expertise.",
+      "Nutzen Sie das Know-how eines erfahrenen Entwickler-Teams mit mehreren Jahren Expertise.",
   },
   {
     id: 2,
@@ -145,6 +143,3 @@ export const workWithUsUIFeaturesData: Feature[] = [
       "Schaffen Sie einen unverwechselbaren Markenauftritt durch ein konsistentes und einheitliches Erscheinungsbild.",
   },
 ];
-
-
-
