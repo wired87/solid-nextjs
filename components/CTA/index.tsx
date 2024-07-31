@@ -66,7 +66,7 @@ const CTA: React.FC<CTAT> = (
   const r = validateProps(heading, des, image, btnText, href, trustImg)
 
   return (
-      <section className="overflow-hidden px-4 bg-white py-5 md:px-8 lg:py-10 2xl:px-0">
+      <section className="overflow-hidden px-4 py-5 md:px-8 lg:py-10 2xl:px-0">
         <div className="mx-auto max-w-c-1390 rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF]
         px-7.5 py-12.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent
         dark:to-transparent dark:stroke-strokedark md:px-12.5 xl:px-17.5 xl:py-0 sm:py-10">

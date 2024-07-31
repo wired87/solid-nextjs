@@ -34,7 +34,7 @@ const getImageSec = (imageSec: ReactNode | string) => {
 export const getPoints = (points: string[] | undefined) => {
   if (points?.length) {
     return(
-      <ul className={"grid grid-cols-2 gap-4 list-none text-left p-0 mt-5"}>
+      <ul className={"grid grid-cols-1 md:grid-cols-2 gap-4 list-none text-left p-0 mt-5"}>
         {points.map((item:string, i:number) => (
           <div className={"flex-row flex gap-4"}>
             <FaCheck size={18} color={"green"}/>
