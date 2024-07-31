@@ -34,16 +34,16 @@ const Header = () => {
           ? "bg-white !py-4 shadow transition duration-100 dark:bg-black"
           : ""
       }`}>
-      <div className="relative max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">{/*mx-auto*/}
+      <div className="relative flex max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">{/*mx-auto*/}
         <div className="flex w-full items-center justify-between xl:w-1/4">
 
-            <a href="/" className={"align-middle text-3xl font-bold hover:text-indigo-500"}>
+            <a href="/" className={"flex align-middle text-3xl font-bold hover:text-indigo-500"}>
               BotWorld
             </a>
 
 
           <button
-            className="relative flex xl:hidden"
+            className="relative flex  xl:hidden"
             onClick={() => setNavigationOpen(!navigationOpen)}
           >
             <RxHamburgerMenu size={25} />
