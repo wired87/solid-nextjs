@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
-import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
@@ -29,7 +28,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-99999 mx-0 w-full py-7 ${
+      className={`fixed w-full top-0 z-99999 mx-0 py-7 ${
         stickyMenu
           ? "bg-white !py-4 shadow transition duration-100 dark:bg-black"
           : ""
