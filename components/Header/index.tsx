@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
@@ -37,17 +37,16 @@ const Header = () => {
       <div className="relative max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">{/*mx-auto*/}
         <div className="flex w-full items-center justify-between xl:w-1/4">
 
-            <a href="/" className={"block align-middle text-3xl font-bold hover:text-indigo-500"}>
+            <a href="/" className={"align-middle text-3xl font-bold hover:text-indigo-500"}>
               BotWorld
             </a>
 
 
           <button
-            aria-label="hamburger Toggler"
             className="relative flex xl:hidden"
             onClick={() => setNavigationOpen(!navigationOpen)}
           >
-            <GiHamburgerMenu size={25} color={"white"}/>
+            <RxHamburgerMenu size={25} />
           </button>
         </div>
         
