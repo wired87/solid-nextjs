@@ -43,7 +43,7 @@ const Header = () => {
 
           <button
             aria-label="hamburger Toggler"
-            className="block xl:hidden"
+            className="relative flex xl:hidden"
             onClick={() => setNavigationOpen(!navigationOpen)}
           >
             <span className="relative flex h-5.5 w-5.5 cursor-pointer">
