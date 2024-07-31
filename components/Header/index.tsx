@@ -43,7 +43,7 @@ const Header = () => {
 
 
           <button
-            className="relative flex right-2  xl:hidden"
+            className="absolute flex right-2  xl:hidden"
             onClick={() => setNavigationOpen(!navigationOpen)}
           >
             <RxHamburgerMenu size={25} />
