@@ -13,7 +13,7 @@ interface CTAT {
   href?: string;
   trustImg?: string;
 }
-
+// todo header less width in sm otherwise overlapp
 const validateProps = (heading,
                        des,
                        image,
@@ -27,9 +27,9 @@ const validateProps = (heading,
       des: "Vereinbaren Sie ein unverbindliches Erstgespräch mit einem unserer Experten.",
       image: <Image
         width={210}
-        height={300}
+        height={200}
         src={trustImg || "/images/trust/bene_bg.png"}
-        alt="Arrow"
+        alt="profile_img.png"
         className=""
       />,
       btnText: "Projekt besprechen",
@@ -66,8 +66,10 @@ const CTA: React.FC<CTAT> = (
   const r = validateProps(heading, des, image, btnText, href, trustImg)
 
   return (
-      <section className="overflow-hidden px-4 py-20 md:px-8 lg:py-25 xl:py-30 2xl:px-0">
-        <div className="mx-auto max-w-c-1390 rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] px-7.5 py-12.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark md:px-12.5 xl:px-17.5 xl:py-0">
+      <section className="overflow-hidden px-4  py-20 md:px-8 lg:py-25 xl:py-30 2xl:px-0">
+        <div className="mx-auto max-w-c-1390 rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF]
+        px-7.5 py-12.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent
+        dark:to-transparent dark:stroke-strokedark md:px-12.5 xl:px-17.5 xl:py-0 sm:py-10">
           <div className="flex flex-wrap gap-8 md:flex-nowrap md:items-center md:justify-between md:gap-0">
             <motion.div
               variants={{
@@ -112,15 +114,17 @@ const CTA: React.FC<CTAT> = (
               className="animate_right py-10 lg:w-[45%]"
             >
 
-              <div className="flex items-center justify-end xl:justify-between">
-                <div className={"w-[300px] my-10 h-[150px] xl:block"}>
+              <div className="flex flex-row items-center
+              justify-end xl:justify-between">
+                <div className={"md:w-[300px] w-[0] h-[0] my-10 md:h-[150px]  xl:block"}>
                   {
                     r.image
                   }
                 </div>
                 <a
                   href={r.href}
-                  className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white hover:opacity-90 dark:bg-white dark:text-black"
+                  className="inline-flex items-center gap-2.5 rounded-full bg-black px-6
+                  py-3 font-medium text-white hover:opacity-90 dark:bg-white dark:text-black"
                 >
                   {
                     r.btnText

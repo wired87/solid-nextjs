@@ -10,7 +10,7 @@ export default function Hero() {
           alt="uhu.ong"
           width={100}
           height={100}
-          className="float absolute top-[5%] left-[25%] h-16 w-28 select-none opacity-60 grayscale hue-rotate-180 invert transition
+          className="float md:visible hidden absolute top-[5%] left-[25%] h-16 w-28 select-none opacity-60 grayscale hue-rotate-180 invert transition
 					hover:scale-110 hover:opacity-100 hover:grayscale-0"
         />
         <Image
@@ -18,7 +18,7 @@ export default function Hero() {
           height={100}
           src="/images/bot_hero/stripe.svg"
           alt="tRPC"
-          className="float absolute top-[25%] left-[15%] h-16 w-28 select-none opacity-80 grayscale hue-rotate-180 invert transition
+          className="float md:visible hidden absolute top-[25%] left-[15%] h-16 w-28 select-none opacity-80 grayscale hue-rotate-180 invert transition
 					hover:scale-110 hover:opacity-100 hover:grayscale-0"
         />
 
@@ -27,7 +27,7 @@ export default function Hero() {
           height={100}
           src="/images/bot_hero/insta.svg"
           alt="tailwind"
-          className="float absolute top-[5%] right-[25%] h-16 w-32 select-none opacity-80 grayscale hue-rotate-180 invert transition
+          className="float md:visible hidden absolute top-[5%] right-[25%] h-16 w-32 select-none opacity-80 grayscale hue-rotate-180 invert transition
 					hover:scale-110 hover:opacity-100 hover:grayscale-0"
         />
         <Image
@@ -35,7 +35,7 @@ export default function Hero() {
           height={100}
           src="/images/bot_hero/sf.svg"
           alt="typescript"
-          className="float absolute top-[25%] right-[15%] h-14 w-14 select-none opacity-80 grayscale hue-rotate-180 invert transition
+          className="float absolute md:visible hidden top-[25%] right-[15%] h-14 w-14 select-none opacity-80 grayscale hue-rotate-180 invert transition
 					hover:scale-110 hover:opacity-100 hover:grayscale-0"
         />
 
@@ -53,8 +53,8 @@ export default function Hero() {
 
         {/* Headings. */}
         <div className="flex flex-col items-center">
-          <h1 className="text-3xl font-light text-gray-100">
-            <span className="font-bold text-gray-100">Erlebe die neue Ära der </span> Support Assistance
+          <h1 className="text-3xl text-center font-light text-gray-100">
+            <span className="font-bold  text-gray-100">Erlebe die neue Ära der </span> Support Assistance
           </h1>
           <div className="mb-1" />
           <p className="cursor-default text-lg font-semibold text-gray-400 transition hover:brightness-125">
