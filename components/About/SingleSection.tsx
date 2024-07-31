@@ -62,7 +62,7 @@ export const SingleSectionTR: React.FC<AboutSingleT> = (
 
 
   return(
-    <section className="overflow-hidden pb-20 lg:pb-25 xl:pb-30">
+    <section className="overflow-hidden pb-10 md:pb-5 lg:pb-25 xl:pb-30">
       <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
         <div className="flex items-center gap-8 lg:gap-32.5">
           <motion.div
@@ -139,7 +139,7 @@ export const SingleSectionTL: React.FC<AboutSingleT> = (
 ) => {
   return(
     <section>
-      <div className="mx-auto max-w-c-1235 overflow-hidden px-4 md:px-8 2xl:px-0">
+      <div className="mx-auto pb-20 md:pb-10 max-w-c-1235 overflow-hidden px-4 md:px-8 2xl:px-0">
         <div className="flex items-center justify-between gap-8 lg:gap-32.5">
           <motion.div
             variants={{
