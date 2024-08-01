@@ -28,7 +28,8 @@ export default function RootLayout({
         >
           <NextUIProvider>
             <Lines />
-            <ToasterContext />
+            <Header />
+
             {children}
             <Footer />
             <ScrollToTop />
