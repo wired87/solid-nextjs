@@ -162,8 +162,8 @@ const Contact = () => {
       return(
         <Spinner size={"sm"} color="primary" labelColor="foreground"/>
       )
-
     }
+
     return(
       <svg
         className="fill-white"

@@ -10,7 +10,7 @@ export default function Hero() {
           alt="uhu.ong"
           width={100}
           height={100}
-          className="float md:visible hidden absolute top-[5%] left-[25%] h-16 w-28 select-none opacity-60 grayscale hue-rotate-180 invert transition
+          className="float md:block hidden absolute top-[5%] left-[25%] h-16 w-28 select-none opacity-60 grayscale hue-rotate-180 invert transition
 					hover:scale-110 hover:opacity-100 hover:grayscale-0"
         />
         <Image
@@ -18,7 +18,7 @@ export default function Hero() {
           height={100}
           src="/images/bot_hero/stripe.svg"
           alt="tRPC"
-          className="float md:visible hidden absolute top-[25%] left-[15%] h-16 w-28 select-none opacity-80 grayscale hue-rotate-180 invert transition
+          className="float md:block hidden absolute top-[25%] left-[15%] h-16 w-28 select-none opacity-80 grayscale hue-rotate-180 invert transition
 					hover:scale-110 hover:opacity-100 hover:grayscale-0"
         />
 
@@ -27,7 +27,7 @@ export default function Hero() {
           height={100}
           src="/images/bot_hero/insta.svg"
           alt="tailwind"
-          className="float md:visible hidden absolute top-[5%] right-[25%] h-16 w-32 select-none opacity-80 grayscale hue-rotate-180 invert transition
+          className="float md:block hidden absolute top-[5%] right-[25%] h-16 w-32 select-none opacity-80 grayscale hue-rotate-180 invert transition
 					hover:scale-110 hover:opacity-100 hover:grayscale-0"
         />
         <Image
@@ -35,7 +35,7 @@ export default function Hero() {
           height={100}
           src="/images/bot_hero/sf.svg"
           alt="typescript"
-          className="float absolute md:visible hidden top-[25%] right-[15%] h-14 w-14 select-none opacity-80 grayscale hue-rotate-180 invert transition
+          className="float absolute md:block hidden top-[25%] right-[15%] h-14 w-14 select-none opacity-80 grayscale hue-rotate-180 invert transition
 					hover:scale-110 hover:opacity-100 hover:grayscale-0"
         />
 
