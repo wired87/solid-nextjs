@@ -27,11 +27,13 @@ export default function RootLayout({
           defaultTheme="light"
         >
           <NextUIProvider>
-
+            <Lines />
+            <Header />
             <main className={"w-full"}>
               {children}
             </main>
-
+            <Footer />
+            <ScrollToTop />
           </NextUIProvider>
         </ThemeProvider>
       </body>
