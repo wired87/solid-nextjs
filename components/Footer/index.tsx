@@ -27,25 +27,6 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="animate_top w-1/2 lg:w-1/4"
               >
-                {/*logo sectioon here  <a href="index.tsx.html" className="relative">
-                  <Image
-                    width={110}
-                    height={80}
-                    src="/images/logo/logo-light.svg"
-                    alt="Logo"
-                    className="dark:hidden"
-                  />
-                  <Image
-                    width={110}
-                    height={80}
-                    src="/images/logo/logo-dark.svg"
-                    alt="Logo"
-                    className="hidden dark:block"
-                  />
-                   <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                </a>*/}
 
 
 
