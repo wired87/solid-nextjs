@@ -28,7 +28,6 @@ export default function RootLayout({
         >
           <NextUIProvider>
             <Lines />
-            <Header />
             <ToasterContext />
             {children}
             <Footer />

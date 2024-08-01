@@ -14,17 +14,13 @@ const headerInfo= {
 //       <Testimonial />
 const HomeMain = () => {
   return(
-
-    <>
+    <div className={"w-full"}>
       <FunFact data={factDataHome}/>
       <Feature data={homeFeaturesData} headerInfo={headerInfo}/>
       <CTA />
-
       <Integration />
-
       <Contact />
-    </>
-
+    </div>
   );
 }
 
