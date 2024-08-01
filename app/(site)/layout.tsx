@@ -32,7 +32,7 @@ export default function RootLayout({
 
             {children}
             <Footer />
-            <ScrollToTop />
+
           </NextUIProvider>
         </ThemeProvider>
       </body>
