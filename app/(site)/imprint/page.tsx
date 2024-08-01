@@ -2,10 +2,10 @@
 const Imprint = () => {
   return(
 
-      <div className="w-full h-full items-start justify-center relative flex flex-col px-30 py-20 pb-[23px] gap-[80px]">
+      <div className="w-full h-full items-start justify-center relative flex flex-col px-10 pt-30 pb-[23px] ">
         <div className="self-stretch flex flex-col items-start justify-start gap-[6px]">
           <div className="self-stretch relative font-semibold">
-            <h2 className="relative text-3xl font-bold text-black dark:text-white xl:text-hero">
+            <h2 className="relative pb-8 text-3xl font-bold text-black dark:text-white xl:text-hero">
               Impressum
             </h2>
           </div>
