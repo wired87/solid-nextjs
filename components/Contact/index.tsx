@@ -183,7 +183,7 @@ const Contact = () => {
 
   return (
     <>
-      <section id="support" className="px-4 md:px-8 2xl:px-0 mb-15">
+      <section id="support" className="px-4 md:px-8 2xl:px-0 mb-15 w-full">
         <div className="relative mx-auto max-w-c-1390 px-7.5 pt-10 lg:px-15 lg:pt-15 xl:px-20 xl:pt-20">
           <div className="absolute left-0 top-0 -z-1 h-2/3 w-full rounded-lg bg-gradient-to-t from-transparent to-[#dee7ff47] dark:bg-gradient-to-t dark:to-[#252A42]"></div>
           <div className="absolute bottom-[-255px] left-0 -z-1 h-full w-full">
@@ -272,7 +272,7 @@ const Contact = () => {
                 </div>
                 <div className={"my-10 "}>
                   <h3 className={"bold my-4"}>Dienstleistungen</h3>
-                  <div className={"flex gap-x-7 gap-y-3 flex-row"}>
+                  <div className={"flex flex-col gap-x-7 gap-y-3 md:flex-row"}>
                     <CheckboxGroup
                       onChange={setSelected}
                       onValueChange={setSelected}
@@ -317,7 +317,7 @@ const Contact = () => {
                 <div className="mb-11.5 flex flex-col">
                   <h3 className={"mb-2 bold my-4 underline-offset-2"}>Projektbeschreibung</h3>
                   <textarea
-                    placeholder="Bitte beschreiben Sie kurz Ihr Projekt/Anliegen"
+                    placeholder="Geplant ist..."
                     required
                     value={formData.message}
                     name={"message"}
