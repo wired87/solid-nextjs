@@ -1,5 +1,5 @@
 import { Client } from '@botpress/client';
-
+/*
 const client = new Client({
   authToken: 'YOUR_API_TOKEN',
   botId: 'your_bot_id',
@@ -9,15 +9,16 @@ const client = new Client({
 
 async function createBot() {
   try {
-    const bot = await client.createBot({
+    const bot: any = await client.createBot({
       name: 'My Awesome Bot',
-      description: 'A helpful assistant',
-      defaultLanguage: 'en'
+
+
     });
-    console.log('Bot created:', bot.id);
+    console.log('Bot created:', bot?.id);
   } catch (error) {
     console.error('Bot creation error:', error);
   }
 }
 
 createBot();
+*/
