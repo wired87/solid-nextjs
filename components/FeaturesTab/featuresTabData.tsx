@@ -91,6 +91,21 @@ export const webTabData: FeatureTab[] = [
 
 export const aiTabData: FeatureTab[] = [
   {
+    id: "tabTwo",
+    title: "KI Produktentwicklung",
+    desc1: "Wir entwickeln effiziente und zuverlässige KI-Lösungen, damit Sie sich auf Ihr " +
+      "Kerngeschäft konzentrieren können.",
+    desc2: [
+      "KI-Infrastruktur",
+      "Prozessautomatisierung",
+      "Kontinuierliche Verbesserung",
+      "Echtzeit-Verarbeitung",
+
+    ],
+    image: "2TXNZjz0", // <FeaturesTabCarousel img={webImg} />,
+    imageDark: "" // "https://elements-cover-images-0.imgix.net/804e48d0-c49f-4c35-9d56-f92803e4c65d?auto=compress%2Cformat&w=1370&fit=max&s=abbcf3f437553c2a5eb4b9905b9f2fab",
+  },
+  {
     id: "tabOne",
     title: "KI Modellierung",
     desc1: '\n' +
@@ -106,21 +121,7 @@ export const aiTabData: FeatureTab[] = [
     image: "https://www.svgrepo.com/show/354240/pytorch.svg",
     imageDark: "2TXNZjz0",
   },
-  {
-    id: "tabTwo",
-    title: "KI Produktentwicklung",
-    desc1: "Wir entwickeln effiziente und zuverlässige KI-Lösungen, damit Sie sich auf Ihr " +
-      "Kerngeschäft konzentrieren können.",
-    desc2: [
-      "KI-Infrastruktur",
-      "Prozessautomatisierung",
-      "Kontinuierliche Verbesserung",
-      "Echtzeit-Verarbeitung",
 
-    ],
-    image: "2TXNZjz0", // <FeaturesTabCarousel img={webImg} />,
-    imageDark: "" // "https://elements-cover-images-0.imgix.net/804e48d0-c49f-4c35-9d56-f92803e4c65d?auto=compress%2Cformat&w=1370&fit=max&s=abbcf3f437553c2a5eb4b9905b9f2fab",
-  },
   {
     id: "tabThree",
     title: "Integration",
