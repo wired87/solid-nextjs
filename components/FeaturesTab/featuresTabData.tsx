@@ -92,8 +92,9 @@ export const webTabData: FeatureTab[] = [
 export const aiTabData: FeatureTab[] = [
   {
     id: "tabTwo",
-    title: "KI Produktentwicklung",
-    desc1: "Wir entwickeln effiziente und zuverlässige KI-Lösungen, damit Sie sich auf Ihr " +
+    title: "KI Produktentwicklung ",
+    desc1: "Wir entwickeln effiziente und zuverlässige und auf sie zugeschnittene KI-Lösungen " +
+      "mithilfe unserer Partnertools, damit Sie sich auf Ihr " +
       "Kerngeschäft konzentrieren können.",
     desc2: [
       "KI-Infrastruktur",
