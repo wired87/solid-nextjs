@@ -103,8 +103,8 @@ export const aiTabData: FeatureTab[] = [
       "Test & Evaluierung",
       "Feinabstimmung (Fine tuning) & Optimierung"
     ],
-    image: "/images/brand/torch.svg",// <FeaturesTabCarousel img={crmImg} /> ,
-    imageDark: "/images/brand/torch.svg",
+    image: "2TXNZjz0",
+    imageDark: "2TXNZjz0",
   },
   {
     id: "tabTwo",

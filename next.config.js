@@ -11,6 +11,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "cdn.sanity.io",
         port: "",
+      },{
+        protocol: "https",
+        hostname: "cdn.botpress.cloud",
+        pathname: "/**",
+      },{
+        protocol: "https",
+        hostname: "mediafiles.botpress.cloud",
+        pathname: "/**",
       },
 
     ],

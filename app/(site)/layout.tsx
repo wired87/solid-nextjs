@@ -12,6 +12,7 @@ import {NextUIProvider} from '@nextui-org/react'
 
 import ToasterContext from "../context/ToastContext";
 import React from "react";
+import {BPScript} from "@/components/ChatBot/BPScript";
 
 export default function RootLayout({
   children,
@@ -33,8 +34,12 @@ export default function RootLayout({
             <main className={"w-full"}>
               {children}
             </main>
-            <Footer />
+
+              <BPScript />
+
             <ScrollToTop />
+            <Footer />
+
           </NextUIProvider>
         </ThemeProvider>
       </body>

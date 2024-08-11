@@ -2,22 +2,21 @@ import React from "react";
 import { FeatureTab } from "@/types/featureTab";
 import Image from "next/image";
 import {getPoints} from "@/components/About/SingleSection";
+import {Video} from "@/components/Video";
 
 const FeaturesTabItem = ({ featureTab }: { featureTab: FeatureTab }) => {
-  const { title, desc1, desc2, image, imageDark } = featureTab;
+  const { title, desc1, desc2, image } = featureTab;
 
   const getImg = () => {
     if (typeof image === "string") {
+      if (image.startsWith("2")) {
+        return <Video videoId={image} />
+      }
+      if (image)
       return(
-        <>
+
           <Image src={image} alt={title} fill className="dark:hidden rounded-2xl" />
-          <Image
-            src={imageDark || ""}
-            alt={title}
-            fill
-            className="hidden dark:block rounded-2xl"
-          />
-        </>
+
       );
     }
     return image;
