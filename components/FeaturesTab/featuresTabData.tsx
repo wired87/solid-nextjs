@@ -119,7 +119,7 @@ export const aiTabData: FeatureTab[] = [
       "Test & Evaluierung",
       "Feinabstimmung (Fine tuning) & Optimierung"
     ],
-    image: "https://www.svgrepo.com/show/354240/pytorch.svg",
+    image: "/images/brand/torch.svg",
     imageDark: "2TXNZjz0",
   },
 
