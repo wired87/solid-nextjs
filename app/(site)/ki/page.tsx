@@ -75,8 +75,8 @@ const KIMain = () => {
         />
       </div>
       <FeaturesTab
-          titleOne={"Modellierung"}
-          titleTwo={"Produktentwicklung"}
+          titleOne={"Produktentwicklung"}
+          titleTwo={"Modellierung"}
           titleThree={"Integration"}
           data={aiTabData}
       />
