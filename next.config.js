@@ -16,6 +16,10 @@ const nextConfig = {
         hostname: "cdn.botpress.cloud",
         pathname: "/**",
       },{
+      protocol: "https",
+        hostname: "www.svgrepo.com",
+        pathname: "/**",
+      },{
         protocol: "https",
         hostname: "mediafiles.botpress.cloud",
         pathname: "/**",

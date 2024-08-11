@@ -103,7 +103,7 @@ export const aiTabData: FeatureTab[] = [
       "Test & Evaluierung",
       "Feinabstimmung (Fine tuning) & Optimierung"
     ],
-    image: "2TXNZjz0",
+    image: "https://www.svgrepo.com/show/354240/pytorch.svg",
     imageDark: "2TXNZjz0",
   },
   {
@@ -118,8 +118,8 @@ export const aiTabData: FeatureTab[] = [
       "Echtzeit-Verarbeitung",
 
     ],
-    image: "/images/ki/anw.avif", // <FeaturesTabCarousel img={webImg} />,
-    imageDark: "/images/ki/anw.avif" // "https://elements-cover-images-0.imgix.net/804e48d0-c49f-4c35-9d56-f92803e4c65d?auto=compress%2Cformat&w=1370&fit=max&s=abbcf3f437553c2a5eb4b9905b9f2fab",
+    image: "2TXNZjz0", // <FeaturesTabCarousel img={webImg} />,
+    imageDark: "" // "https://elements-cover-images-0.imgix.net/804e48d0-c49f-4c35-9d56-f92803e4c65d?auto=compress%2Cformat&w=1370&fit=max&s=abbcf3f437553c2a5eb4b9905b9f2fab",
   },
   {
     id: "tabThree",
