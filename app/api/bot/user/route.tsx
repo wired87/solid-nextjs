@@ -6,7 +6,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 
 // https://github.com/vercel/nextjs-subscription-payments
 
-
+/*
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
@@ -51,4 +51,6 @@ const options = {
 export const createBot = async () => {
   return await fetch('https://api.botpress.cloud/v1/admin/bots', options);
 }
+
+*/
 

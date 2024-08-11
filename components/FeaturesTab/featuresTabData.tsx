@@ -124,11 +124,8 @@ export const aiTabData: FeatureTab[] = [
   {
     id: "tabThree",
     title: "Integration",
-    desc1: "Wir integrieren nicht nur unsere eigene Software in Ihre systeme sondern haben uns über die letzten Jahre ein " +
-      "Netzwerk von Partnertools aufgebaut welches es uns ermöglicht Ihnen einen Großteil der vorhandenen Services auf " +
-      "dem Mark anbieten zu können",
     desc2: [
-      "Maßgeschneiderte KI-Modelle",
+      " KI-Modelle",
       "Datenanalyse & -visualisierung",
       "Bildverarbeitung",
       "Support Agenten",
@@ -136,6 +133,8 @@ export const aiTabData: FeatureTab[] = [
       "Gesichtserkennung",
       "Und vieles mehr..."
     ],
+    desc1: "Wir machen's möglich! Unser fundiertes Wissen mit den gängigsten Tools ermöglicht es uns ein breites spektrum an Möglichkeiten abzudecken." +
+      "dem Mark anbieten zu können",
     image: "/images/ki/sys.webp", // <FeaturesTabCarousel img={shopImg}/>,
     imageDark: "/images/ki/sys.webp",
   },
