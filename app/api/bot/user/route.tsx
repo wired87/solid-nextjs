@@ -39,14 +39,8 @@ export default async function handler(req, res) {
   }
 }
 
-import { Client } from '@botpress/client';
 
-const client = new Client({
-  authToken: 'YOUR_API_TOKEN',
-  botId: 'your_bot_id',
-  workspaceId: 'your_workspace_id',
-  baseUrl: 'http://localhost:3000'
-});
+
 
 
 const options = {
