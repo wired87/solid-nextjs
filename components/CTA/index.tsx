@@ -28,7 +28,7 @@ const validateProps = (heading,
       image: <Image
         width={210}
         height={200}
-        src={trustImg || "/images/trust/bene_bg.png"}
+        src={trustImg || ""}
         alt="profile_img.png"
         className=""
       />,
