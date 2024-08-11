@@ -1,4 +1,3 @@
-import { Client } from '@botpress/client';
 /*
 const client = new Client({
   authToken: 'YOUR_API_TOKEN',
