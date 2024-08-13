@@ -31,11 +31,10 @@ export default function RootLayout({
             <Lines />
             <Header />
             <ToasterContext />
+
             <main className={"w-full"}>
               {children}
             </main>
-
-              <BPScript />
 
             <ScrollToTop />
             <Footer />
