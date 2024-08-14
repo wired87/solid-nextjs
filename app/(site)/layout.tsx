@@ -24,43 +24,47 @@ export default function RootLayout({
 
   useEffect(() => {
 
-      (function(d, t) {
+      (function (d, t
+    ) {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
       v.onload = function() {
       // @ts-ignore
         window.voiceflow.chat.load({
-      verify: { projectID: process.env.NEXT_PUBLIC_VF_PROJ_ID },
+      verify: {projectID: '66bc9d08a7c181ee33c5c679'},
       url: 'https://general-runtime.voiceflow.com',
       versionID: 'production'
     });
     }// @ts-ignore
       v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-    })(document, 'script');
+    })
+    (document, 'script'
+    )
+    ;
 
   }, []);
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`dark:bg-black w-full ${inter.className}`}>
+    <body className={`dark:bg-black w-full ${inter.className}`}>
 
-        <ThemeProvider
-          enableSystem={false}
-          attribute="class"
-          defaultTheme="light"
-        >
-          <NextUIProvider>
-            <Lines />
-            <Header />
-            <ToasterContext />
+    <ThemeProvider
+      enableSystem={false}
+      attribute="class"
+      defaultTheme="light"
+    >
+      <NextUIProvider>
+        <Lines/>
+        <Header/>
+        <ToasterContext/>
 
-            <main className={"w-full"}>
-              {children}
-            </main>
+        <main className={"w-full"}>
+          {children}
+        </main>
 
-            <ScrollToTop />
-            <Footer />
+        <ScrollToTop/>
+        <Footer/>
 
-          </NextUIProvider>
+      </NextUIProvider>
         </ThemeProvider>
       </body>
     </html>
