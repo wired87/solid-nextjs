@@ -10,8 +10,9 @@ import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
 import {NextUIProvider} from '@nextui-org/react'
 
+
 import ToasterContext from "../context/ToastContext";
-import React from "react";
+import React, {useEffect} from "react";
 import {BPScript} from "@/components/ChatBot/BPScript";
 
 export default function RootLayout({
@@ -19,9 +20,29 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+
+  useEffect(() => {
+
+      (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+      // @ts-ignore
+        window.voiceflow.chat.load({
+      verify: { projectID: '66bc9d08a7c181ee33c5c679' },
+      url: 'https://general-runtime.voiceflow.com',
+      versionID: 'production'
+    });
+    }// @ts-ignore
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+
+  }, []);
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`dark:bg-black w-full ${inter.className}`}>
+
         <ThemeProvider
           enableSystem={false}
           attribute="class"
