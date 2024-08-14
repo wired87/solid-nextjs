@@ -29,7 +29,7 @@ export default function RootLayout({
       v.onload = function() {
       // @ts-ignore
         window.voiceflow.chat.load({
-      verify: { projectID: '66bc9d08a7c181ee33c5c679' },
+      verify: { projectID: process.env.NEXT_PUBLIC_VF_PROJ_ID },
       url: 'https://general-runtime.voiceflow.com',
       versionID: 'production'
     });
