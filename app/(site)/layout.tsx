@@ -30,7 +30,7 @@ export default function RootLayout({
       v.onload = function() {
       // @ts-ignore
         window.voiceflow.chat.load({
-      verify: {projectID: process.env.NEXT_PUBLIC_VF_PROJ_ID!},
+      verify: {projectID: process.env.NEXT_PUBLIC_VF_PROJ_ID},
       url: 'https://general-runtime.voiceflow.com',
       versionID: 'production'
     });
