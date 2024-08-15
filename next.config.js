@@ -24,6 +24,11 @@ const nextConfig = {
         hostname: "mediafiles.botpress.cloud",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "general-runtime.voiceflow.com",
+        pathname: "/**",
+      },
 
     ],
   },
