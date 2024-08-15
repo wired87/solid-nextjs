@@ -13,7 +13,6 @@ import {NextUIProvider} from '@nextui-org/react'
 
 import ToasterContext from "../context/ToastContext";
 import React, {useEffect} from "react";
-import {BPScript} from "@/components/ChatBot/BPScript";
 
 export default function RootLayout({
   children,
@@ -30,16 +29,16 @@ export default function RootLayout({
       v.onload = function() {
       // @ts-ignore
         window.voiceflow.chat.load({
-      verify: {projectID: process.env.NEXT_PUBLIC_VF_PROJ_ID},
-      url: 'https://general-runtime.voiceflow.com',
-      versionID: 'production'
-    });
-    }// @ts-ignore
-      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-    })
-    (document, 'script'
-    )
-    ;
+        verify: {projectID: process.env.NEXT_PUBLIC_VF_PROJ_ID},
+        url: 'https://general-runtime.voiceflow.com',
+        versionID: 'production'
+      });
+      }// @ts-ignore
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })
+      (document, 'script'
+      )
+      ;
 
   }, []);
 
