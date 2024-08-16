@@ -50,7 +50,7 @@ export default BlogData;
 export const teamData: B[] = [
   {
     _id: 1,
-    mainImage: "",
+    mainImage: "/pb.jpeg",
     title: "Benedikt Sterra",
     metadata: "Geschäftsführer",
     tags: [

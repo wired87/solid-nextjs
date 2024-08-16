@@ -14,29 +14,29 @@ import {NextUIProvider} from '@nextui-org/react'
 import ToasterContext from "../context/ToastContext";
 import React, {useEffect} from "react";
 
+const vfProjId = process.env.NEXT_PUBLIC_VF_PROJ_ID;
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
 
-
   useEffect(() => {
-      (function (d, t
-    ) {
+    (function (d, t) {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
       v.onload = function() {
         // @ts-ignore
       window.voiceflow.chat.load({
-      verify: {projectID: "66bc9d08a7c181ee33c5c679"},
+      verify: {projectID: vfProjId},
       url: 'https://general-runtime.voiceflow.com',
       versionID: 'production'
-    });
-    }// @ts-ignore
-      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-    })
-    (document, 'script'
-    )
+      });
+      }// @ts-ignore
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })
+      (document, 'script'
+      )
     ;
   }, []);
 
