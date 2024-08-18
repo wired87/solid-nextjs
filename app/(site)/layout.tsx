@@ -14,7 +14,7 @@ import {NextUIProvider} from '@nextui-org/react'
 import ToasterContext from "../context/ToastContext";
 import React, {useEffect} from "react";
 
-const vfProjId = process.env.NEXT_PUBLIC_VF_PROJ_ID;
+const vfProjId = "66bc9d08a7c181ee33c5c679";
 
 export default function RootLayout({
   children,
