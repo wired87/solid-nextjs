@@ -21,7 +21,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
+  console.log("VF TOKEN:", vfProjId);
   useEffect(() => {
     (function (d, t) {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
