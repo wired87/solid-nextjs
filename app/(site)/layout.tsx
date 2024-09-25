@@ -21,7 +21,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  useEffect(() => {
+  /*useEffect(() => {
     (function (d, t) {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
       v.onload = function() {
@@ -37,7 +37,7 @@ export default function RootLayout({
       (document, 'script'
       )
     ;
-  }, []);
+  }, []);*/
 
   return (
     <html lang="en" suppressHydrationWarning>

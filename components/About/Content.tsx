@@ -56,7 +56,6 @@ export const MainContent = () => {
             "Umfangreiche Erfahrungen und Fähigkeiten",
             "Hoch Qualifizierte Freiberufler",
             "Jede gängige Technologie mehrfach vertreten",
-            "Top Experten aus jedem Gebiet",
           ]
         }
       />

@@ -13,7 +13,7 @@ interface CTAT {
   href?: string;
   trustImg?: string;
 }
-// todo header less width in sm otherwise overlapp
+
 const validateProps = (heading,
                        des,
                        image,
@@ -24,14 +24,14 @@ const validateProps = (heading,
   if (!heading || !des || !image || !btnText) {
     return {
       heading: "Wie können wir helfen?",
-      des: "Vereinbaren Sie ein unverbindliches Erstgespräch mit einem unserer Experten.",
-      image: <Image
+      des: "Vereinbaren Sie ein unverbindliches Erstgespräch mit uns",
+      image: trustImg? <Image
         width={210}
         height={200}
         src={trustImg || ""}
         alt="profile_img.png"
         className=""
-      />,
+      /> : null,
       btnText: "Projekt besprechen",
       href: "/contact"
     }

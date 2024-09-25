@@ -31,6 +31,7 @@ const getImageSec = (imageSec: ReactNode | string) => {
     </>
   )
 }
+
 export const getPoints = (points: string[] | undefined) => {
   if (points?.length) {
     return(
@@ -48,7 +49,6 @@ export const getPoints = (points: string[] | undefined) => {
   }
 }
 
-
 export const SingleSectionTR: React.FC<AboutSingleT> = (
   {
     imageSec,
@@ -58,8 +58,6 @@ export const SingleSectionTR: React.FC<AboutSingleT> = (
     points
   }
 ) => {
-
-
 
   return(
     <section className="overflow-hidden pb-10 md:pb-5 lg:pb-25 xl:pb-30">
