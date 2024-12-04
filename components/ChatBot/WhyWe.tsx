@@ -20,15 +20,13 @@ const middleSection = {
   headingTwo: "Verknüpfbar mit dutzenden services",
   exp: "",
   points: [
+    "Personalisierte KD interaktion",
+
     "Bestellungen aufgeben",
 
-    " Integration in bestehende Systeme",
+    "Auf allen gängigen Plattformen",
 
-    "Multi-channel Verfügbarkeit",
-
-    "In vielen Sprachen verfügbar",
-
-    "Interagiere mit dutzenden von services",
+    "Viele Sprachen",
 
     "Promote produkte",
 

@@ -6,4 +6,5 @@ export interface AboutSingleT {
   exp: string;
   imageSec?: ReactNode;
   points?: string[];
+  btn?: ReactNode;
 }

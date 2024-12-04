@@ -1,10 +1,10 @@
-import {motion} from "framer-motion";
 import Image from "next/image";
 import {AboutSingleT} from "@/types/about";
 import React, {ReactNode} from "react";
 import { FaCheck } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
-const getImageSec = (imageSec: ReactNode | string) => {
+export const getImageSec = (imageSec: ReactNode | string) => {
   if (imageSec) {
     if (typeof imageSec === "string") {
       return(
@@ -55,9 +55,18 @@ export const SingleSectionTR: React.FC<AboutSingleT> = (
     headingOne,
     headingTwo,
     exp,
-    points
+    points,
+    btn,
   }
 ) => {
+  const getBtn = (): ReactNode => {
+    if (btn) {
+      return btn
+    }
+    return <></>
+  }
+
+
 
   return(
     <section className="overflow-hidden pb-10 md:pb-5 lg:pb-25 xl:pb-30">
@@ -120,6 +129,7 @@ export const SingleSectionTR: React.FC<AboutSingleT> = (
               getPoints(points)
             }
           </motion.div>
+          {getBtn()}
         </div>
       </div>
     </section>

@@ -28,24 +28,7 @@ const menuData: Menu[] = [
         title: "MVP Entwicklung",
         newTab: false,
         path: "/mvp",
-      },/*{
-        id: 335,
-        title: "Individual Software Entwicklung",
-        newTab: false,
-        path: "/auth/signup",
       },
-      {
-        id: 34,
-        title: "Cloud Infrastruktur",
-        newTab: false,
-        path: "/auth/signin",
-      },
-      {
-        id: 35,
-        title: "API Entwicklung und Integration",
-        newTab: false,
-        path: "/auth/signup",
-      },*/
     ]
   },
   {

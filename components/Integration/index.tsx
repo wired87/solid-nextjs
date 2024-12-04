@@ -2,8 +2,15 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
-
-const Integration = () => {
+import React from "react";
+interface T {
+    heading?: string;
+    iconSrc?: string[];
+}
+const Integration: React.FC<T> = (
+    heading,
+    iconSrc
+) => {
   return (
     <>
       <section className={"mb-20"}>
@@ -138,7 +145,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
