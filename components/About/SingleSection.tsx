@@ -3,6 +3,7 @@ import {AboutSingleT} from "@/types/about";
 import React, {ReactNode} from "react";
 import { FaCheck } from "react-icons/fa";
 import { motion } from 'framer-motion';
+import {getPoints} from "@/components/CheckList";
 
 export const getImageSec = (imageSec: ReactNode | string) => {
   if (imageSec) {
@@ -32,22 +33,6 @@ export const getImageSec = (imageSec: ReactNode | string) => {
   )
 }
 
-export const getPoints = (points: string[] | undefined) => {
-  if (points?.length) {
-    return(
-      <ul className={"grid grid-cols-1 md:grid-cols-2 gap-4 list-none text-left p-0 mt-5"}>
-        {points.map((item:string, i:number) => (
-          <div className={"flex-row flex gap-4"}>
-            <FaCheck size={18} color={"green"}/>
-            <li key={i} className={"dark:text-white text-black"}>
-              {item}
-            </li>
-          </div>
-        ))}
-      </ul>
-    )
-  }
-}
 
 export const SingleSectionTR: React.FC<AboutSingleT> = (
   {

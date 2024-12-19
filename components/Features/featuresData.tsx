@@ -43,15 +43,82 @@ export const homeFeaturesData: Feature[] = [
     description:
       "Erhöhen Sie die Skalierbarkeit, Elastizität und Verfügbarkeit Ihrer Software durch unsere Partner-Cloud-Services.",
   },
+
+];
+
+
+
+
+export const aiFeatures: Feature[] = [
   {
-    id: 5,
+    id: 1,
+    icon: "/images/icon/icon-01.svg",
+    title: "KI Agenten",
+    description:
+      "KI Agenten können riesige Mengen an Aufgaben 24/7 in vielen Bereichen Ihres Unternehmens bearbeiten. " +
+      "Konzentrieren Sie sich auf Ihr Kerngeschäft und überlassen Sie dem Fortschritt den Rest!",
+  },{
+    id: 2,
+    icon: "/images/icon/icon-01.svg",
+    title: "Virtuelle Kundenservice mitarbeiter",
+    description:
+      "Wir trainieren Sprachmodelle mit allen benötigten Unterlagen Ihres Unternehmens um einen blitzschnellen Supportmitarbeiter" +
+      "Für Ihre Kunden. Steigern Sie nachweislich die Kundenzufriedenheit sowie Umsätze ",
+  },{
+    id: 9,
+    icon: "/images/icon/icon-01.svg",
+    title: "Maßgeschneiderte KI modelle",
+    description:
+      "KI für Unternehmen bietet einzigartige möglichkeiten in der Analytik, " +
+      "Marketing & Vertrieb, Buchhaltung & Finanzen uvm.",
+  },
+  {
+    id: 8,
+    icon: "/images/icon/icon-01.svg",
+    title: "Datenbeschaffung",
+    description:
+      "Wir übernehmen die Datenrecherche sowie Verarbeitung für Sie um qualitative Ergebnisse zu garantieren",
+  },
+  {
+    id: 4,
+    icon: "/images/icon/icon-05.svg",
+    title: "Nahtlose Integration",
+    description:
+      "Alle Modelle werden von uns manuell, auf Wunsch, in Ihre systeme Integriert, getestet, gewartet und aktualisiert.",
+  },
+  {
+    id: 7,
     icon: "/images/icon/icon-05.svg",
     title: "Unterstützung & Support",
     description:
       "Unser Team arbeitet eng mit Ihnen zusammen, um sicherzustellen, dass Ihre Geschäfts- oder " +
       "Unternehmensinfrastruktur auf allen Ebenen optimal und rund um die Uhr betreut wird.",
   },
-];
+
+]
+
+
+
+const a = {
+    id: 3,
+    icon: "/images/icon/icon-01.svg",
+    title: "Qualitätskontrolle und Automatisierung",
+    description:
+      "Vermeiden Sie Fehler durch zuverlässige Unterstützung im Bereich Buchhaltung, Finanzen, Marketing, und vieles mehr.",
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export const workWithUsFeaturesData: Feature[] = [
   {

@@ -222,7 +222,7 @@ const Contact = () => {
               dark:border-strokedark dark:bg-black md:w-3/5 lg:w-3/4 xl:p-15"
             >
               <h2 className="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
-                Fordern Sie den Preis für Ihr Projekt an
+                Wie können wir helfen?
               </h2>
               <form
                 onSubmit={handleSubmit}

@@ -17,19 +17,15 @@ export const factDataHome: FunFactDataT[] = [
 
 export const detailedFacts: FunFactDataT[] = [
   {
-    value: 12,
-    text: "Aufträge"
-  },
-  {
     value: 6,
-    text: "Beschäftigte Freiberufler"
+    text: "Freiberufler"
   },
   {
-    value: 1.5,
+    value: 3.5,
     text: "Jahre im Geschäft"
   },
   {
-    value: 12,
+    value: "Nur",
     text: "Zufriedene Kunden"
   },
 ]

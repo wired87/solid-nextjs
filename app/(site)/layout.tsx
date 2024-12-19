@@ -12,7 +12,7 @@ import {NextUIProvider} from '@nextui-org/react'
 
 
 import ToasterContext from "../context/ToastContext";
-import React, {useEffect} from "react";
+import React from "react";
 
 const vfProjId = "66bc9d08a7c181ee33c5c679";
 

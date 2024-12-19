@@ -3,10 +3,16 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
 import React from "react";
+import { FcImageFile } from "react-icons/fc";
+
+
 interface T {
     heading?: string;
     iconSrc?: string[];
 }
+
+// todo -> datenbeschaffung: Sie haben ein Projekt im sinn, sind sich aber unsicher  bei der Datenbeschaffung?
+
 const Integration: React.FC<T> = (
     heading,
     iconSrc
@@ -17,9 +23,9 @@ const Integration: React.FC<T> = (
         <div className="mx-auto  max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <SectionHeader
             headerInfo={{
-              title: ``,
-              subtitle: `Unser Tech Stack`,
-              description: ``,
+              title: `Multimodale Transparenz`,
+              subtitle: `Ihre Daten, Ihre Regeln`,
+              description: `Unsere Trainingsformate sind auf Ihr Unternehmen zugeschnitten.`,
               link: true
             }}
           />
@@ -49,7 +55,6 @@ const Integration: React.FC<T> = (
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -63,10 +68,11 @@ const Integration: React.FC<T> = (
             >
               <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
                 <Image
+                  src="/i.png"
+                  alt="Dotted"
+                  className="hidden dark:block"
                   width={50}
                   height={50}
-                  src="./images/brand/py.svg"
-                  alt="Brand"
                 />
               </div>
             </motion.div>
@@ -112,7 +118,7 @@ const Integration: React.FC<T> = (
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/ts.svg"
+                  src="/s.png"
                   alt="Brand"
                 />
               </div>
@@ -160,7 +166,7 @@ const Integration: React.FC<T> = (
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/torch.svg"
+                  src="/d.png"
                   alt="Brand"
                 />
               </div>
@@ -212,7 +218,6 @@ const Integration: React.FC<T> = (
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -228,7 +233,7 @@ const Integration: React.FC<T> = (
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/react.svg"
+                  src="/sound.png"
                   alt="Brand"
                 />
               </div>
@@ -277,7 +282,7 @@ const Integration: React.FC<T> = (
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/swift.svg"
+                  src="/m.png"
                   alt="Brand"
                 />
               </div>
@@ -326,8 +331,8 @@ const Integration: React.FC<T> = (
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/dj.svg"
-                  alt="Brand"
+                  src="/v.png"
+                  alt="https://de.vecteezy.com/png/12627922-3d-play-video-symbol-mit-kinorahmen-spielen-streamen-von-video-social-media-oder-multimedia-konzept-hochwertige-isolierte-3d-darstellung"
                 />
               </div>
             </motion.div>

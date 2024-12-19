@@ -38,7 +38,7 @@ const Footer = () => {
                   href="#"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  info@botworld.cloud
+                  office@botworld.cloud
                 </a>
               </motion.div>
 

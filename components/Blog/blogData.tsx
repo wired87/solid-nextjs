@@ -54,12 +54,8 @@ export const teamData: B[] = [
     title: "Benedikt Sterra",
     metadata: "Geschäftsführer",
     tags: [
-      "TypeScript",
-      "Mobile Entwicklung",
-      "PyTorch",
-      "Kotlin",
-      "Python",
-      "React"
+      "Cloud Development",
+      "Integration"
     ]
   },
   {
@@ -69,26 +65,18 @@ export const teamData: B[] = [
     metadata:
       "Chief Technology Officer",
     tags: [
-      "Chat Bot Experte",
-      "KI-Experte",
-      "PyTorch",
-      "Python",
-      "TypeScript",
-      "React"
+      "AI Agents",
+      "Datenbeschaffung"
     ]
   },{
     _id: 3,
     mainImage: "/images/trust/felix.png",
-    title: "Felix Izere",
+    title: "Shehroz Rehmann",
     metadata:
-      "Chief Design Officer",
+      "Chief of AI",
     tags: [
-      "Design",
-      "React",
-      "TypeScript",
-      "AI Experte",
-      "TypeScript",
-      "React"
+      "Künstliche Intelligenz (KI)",
+      "Datenbeschaffung"
     ]
   },
 

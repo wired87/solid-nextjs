@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section className="mt-20 flex flex-col items-center justify-center bg-black py-15">
+    <section className="mt-20 flex flex-col items-center justify-center bg-transparent py-15">
       <div className="relative flex flex-col items-center">
         <Image
           src="/images/bot_hero/cal.svg"
@@ -53,8 +53,8 @@ export default function Hero() {
 
         {/* Headings. */}
         <div className="flex flex-col items-center">
-          <h1 className="text-3xl text-center font-light text-gray-100">
-            <span className="font-bold  text-gray-100">Erlebe die neue Ära der </span> Support Assistance
+          <h1 className="text-3xl text-center font-light  text-gray-700">
+            <span className="font-bold text-base text-gray-700 dark:text-gray-100">Erlebe die neue Ära der </span> Support Assistance
           </h1>
           <div className="mb-1" />
           <p className="cursor-default text-lg font-semibold text-gray-400 transition hover:brightness-125">
@@ -64,14 +64,14 @@ export default function Hero() {
         <div className="mb-6" />
 
         <div className="flex cursor-default flex-col items-center">
-          <h1 className="text-center text-8xl font-bold text-gray-200">
+          <h1 className="text-center text-8xl font-bold text-black dark:text-gray-200">
             <span
               className="bg-clip-text
 							text-primary transition hover:brightness-125"
             >
               Ihr eigener
             </span>{" "}
-            Support Agent
+            AI Agents
           </h1>
           <h1
             className="bg-gradient-to-b from-gray-200 to-gray-400 bg-clip-text text-8xl

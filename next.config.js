@@ -23,6 +23,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "mediafiles.botpress.cloud",
         pathname: "/**",
+      },{
+        protocol: "https",
+        hostname: "d0.awsstatic.com",
+        pathname: "/**",
       },
       {
         protocol: "https",
