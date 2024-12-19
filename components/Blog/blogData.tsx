@@ -70,7 +70,7 @@ export const teamData: B[] = [
     ]
   },{
     _id: 3,
-    mainImage: "/images/trust/felix.png",
+    mainImage: "/img.png",
     title: "Shehroz Rehmann",
     metadata:
       "Chief of AI",
