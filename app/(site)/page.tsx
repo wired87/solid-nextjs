@@ -16,7 +16,7 @@ export default function Home() {
       <Hero  explanationOrComponent={"Genießen auch Sie die Vorteile von KI im eigenen Unternehmen und sparen Zeit, Geld und Nerven"}
              imageOrSection={
                <Image
-                 src="/images/trust/staff.jpeg"
+                 src="/img_1.png"
                  alt="shape"
                  width={600}
                  height={600}
