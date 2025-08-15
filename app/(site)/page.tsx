@@ -26,7 +26,7 @@ export default function Home() {
              mainHeading={"Wir automatisieren Ihr Business!"}
              smallHeading={""}
       noContact={true}
-      />
+       />
       <HomeMain />
     </>
   );
