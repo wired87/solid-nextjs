@@ -4,7 +4,7 @@ import TypeIndex from "@/components/Contact/type_index";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Page",
+  description: "Contac t Page",
 };
 // import {Code} from "@nextui-org/code";
 
