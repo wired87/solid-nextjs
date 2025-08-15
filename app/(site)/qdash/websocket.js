@@ -91,7 +91,7 @@ const _useWebSocket = (
         handleWebSocketMessage(receivedMessage)
         //
       } catch (e) {
-        console.error("Fehler beim Parsen der WebSocket-Nachricht:", e);
+        console.log("Fehler beim Parsen der WebSocket-Nachricht:", e);
       }
     };
 
@@ -102,7 +102,7 @@ const _useWebSocket = (
     };
 
     ws.current.onerror = (event) => {
-      console.error('WebSocket Fehler:', event);
+      console.log('WebSocket Fehler:', event);
       setError(event);
       setIsConnected(false);
     };

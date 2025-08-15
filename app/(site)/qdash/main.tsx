@@ -1,14 +1,24 @@
 "use client"
 
 import React, {useCallback, useEffect, useRef, useState} from 'react';
-import _useWebSocket from "./_websocket";
+import _useWebSocket from "./websocket";
 import {initializeApp} from "firebase/app";
 import {getDatabase, off, onChildChanged, ref} from "firebase/database";
 import {ThreeScene} from "./_use_three.js";
 import {getNodeColor} from "./get_color";
 
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter
+} from "@heroui/modal";
+
+import {useDisclosure} from "@nextui-org/react";
+
 const quey_str = "?user_id=rajtigesomnlhfyqzbvx&env_id=env_bare_rajtigesomnlhfyqzbvx&mode=demo";
-// const WS_URL = `wss://www.bestbrain.tech/sim/run/${quey_str}`;
+const WS_URL = `wss://www.bestbrain.tech/sim/run/${quey_str}`;
 const WS_URL_LOCAL = `ws://127.0.0.1:8000/sim/run/${quey_str}`;
 
 // --- Style Constants ---
@@ -102,49 +112,49 @@ const NodeInfoPanel = ({ node, logs, onClose, onDownloadSingle, onDownloadAll })
   if (!node) return null;
 
   const nodeLogs = logs[node.id] || [];
+  const {isOpen, onOpen, onOpenChange} = useDisclosure();
+  const [modalPlacement, setModalPlacement] = useState("auto");
+
 
   return (
-    <div className="node-info-panel" style={{ flex: '0 0 350px', zIndex: 1000, padding: '16px', borderLeft: `1px solid ${COLORS.border}`, display: 'flex', flexDirection: 'column', backgroundColor: COLORS.panelBg, color: COLORS.text }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h3 style={{ margin: 0, fontWeight: '500' }}>Node Details</h3>
-        <button onClick={onClose} style={{ background: 'none', border: 'none', color: COLORS.text, fontSize: '1.5rem', cursor: 'pointer', padding: '0 5px' }}>
-          &times;
-        </button>
-      </div>
+    <div className="flex px-10 min-h-[80vh] justify-center items-center flex-col gap-4">
+      <Button className="max-w-fit" onPress={onOpen}>
+        Open Modal
+      </Button>
 
-      <div className="node-details-content" style={{ flex: 1, overflowY: 'auto', backgroundColor: COLORS.containerBg, padding: '12px', marginTop: '16px', borderRadius: '8px', fontSize: '14px' }}>
-        <p><strong>ID:</strong> {node.id}</p>
-        <p><strong>Type:</strong> {node.type}</p>
-      </div>
-
-      <h4 style={{marginTop: '20px', marginBottom: '8px', fontWeight: '500'}}>Logs</h4>
-      <div className="node-logs-table" style={{ flex: 2, overflowY: 'auto', backgroundColor: COLORS.containerBg, padding: '12px', borderRadius: '8px', fontSize: '14px' }}>
-         {nodeLogs.length > 0 ? (
-            <table style={{width: '100%', borderCollapse: 'collapse'}}>
-                <tbody>
-                    {nodeLogs.map((log, index) => (
-                        <tr key={index}>
-                            <td style={{ padding: '4px 8px 4px 0', verticalAlign: 'top', color: COLORS.textSecondary }}>{index}:</td>
-                            <td style={{wordBreak: 'break-all'}}>{typeof log === 'object' ? JSON.stringify(log) : log}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-         ) : (
-            <p style={{color: COLORS.textSecondary}}>No logs received for this node.</p>
-         )}
-      </div>
-      <div className="download-buttons" style={{marginTop: '16px', display: 'flex', gap: '10px'}}>
-          <button style={nodeLogs.length === 0 ? disabledButtonStyle : buttonStyle} onClick={() => onDownloadSingle(node.id)} disabled={nodeLogs.length === 0}>
-            Download Logs
-          </button>
-          <button style={buttonStyle} onClick={onDownloadAll}>
-            Download All
-          </button>
-      </div>
+      <Modal isOpen={isOpen} placement={modalPlacement} onOpenChange={onOpenChange}>
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+              <ModalBody>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non
+                  risus hendrerit venenatis. Pellentesque sit amet hendrerit risus, sed porttitor
+                  quam.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non
+                  risus hendrerit venenatis. Pellentesque sit amet hendrerit risus, sed porttitor
+                  quam.
+                </p>
+              </ModalBody>
+              <ModalFooter>
+                <Button color="danger" variant="light" onPress={onClose}>
+                  Close
+                </Button>
+                <Button color="primary" onPress={onClose}>
+                  Action
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
     </div>
   );
-};
+}
+
 
 // Data View Sidebar Component (Positioned on the Left)
 
@@ -524,7 +534,7 @@ const QDash = (callback, deps) => {
     isConnected, error,
     deactivate
   } = _useWebSocket(
-    WS_URL_LOCAL, nodes,
+    WS_URL, nodes,
     edges, updateNodes,
     updateEdges, updateCreds,
     () => {}
