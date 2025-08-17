@@ -1,6 +1,8 @@
 "use client";
 import React, {useEffect} from "react";
-import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
+import {
+  Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure
+} from "@heroui/react";
 
 interface CMOdelT {
   updateState: () => void;
@@ -8,7 +10,7 @@ interface CMOdelT {
 }
 
 const  CModal: React.FC<CMOdelT> = (
-  {updateState, state}
+  {updateState, state, info=null}
 ) => {
 
   const {isOpen, onOpen, onOpenChange} = useDisclosure();

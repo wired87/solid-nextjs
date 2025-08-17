@@ -23,8 +23,8 @@ export default function Home() {
                  className="object-contain"
                />
         }
-             mainHeading={"Wir automatisieren Ihr Business!"}
-             smallHeading={""}
+       mainHeading={"Wir automatisieren Ihr Business!"}
+       smallHeading={""}
       noContact={true}
        />
       <HomeMain />

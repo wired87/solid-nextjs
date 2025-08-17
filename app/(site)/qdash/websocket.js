@@ -49,7 +49,7 @@ const _useWebSocket = (
           data.forEach(node => { // forEach ist hier passender, da nichts zurückgegeben wird
             if (node.meta) {
               const state = node.meta.status?.state; // Optional Chaining für "status"
-              if (state === "active") {
+              if (state === "ALIVE") {
                 console.log("Add", node.id, "to activeNodes");
                 updateActiveNodes(node.id);
               }

@@ -6,16 +6,7 @@ import {initializeApp} from "firebase/app";
 import {getDatabase, off, onChildChanged, ref} from "firebase/database";
 import {ThreeScene} from "./_use_three.js";
 import {getNodeColor} from "./get_color";
-
-import {
-  Modal,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalFooter
-} from "@heroui/modal";
-
-import {useDisclosure} from "@nextui-org/react";
+import {NodeInfoPanel} from "@/app/(site)/qdash/components/node_info_panel";
 
 const quey_str = "?user_id=rajtigesomnlhfyqzbvx&env_id=env_bare_rajtigesomnlhfyqzbvx&mode=demo";
 const WS_URL = `wss://www.bestbrain.tech/sim/run/${quey_str}`;
@@ -107,53 +98,7 @@ const downloadTableDataCSV = (data, filename) => {
 };
 
 
-// Side Panel Component to display node details and logs
-const NodeInfoPanel = ({ node, logs, onClose, onDownloadSingle, onDownloadAll }) => {
-  if (!node) return null;
 
-  const nodeLogs = logs[node.id] || [];
-  const {isOpen, onOpen, onOpenChange} = useDisclosure();
-  const [modalPlacement, setModalPlacement] = useState("auto");
-
-
-  return (
-    <div className="flex px-10 min-h-[80vh] justify-center items-center flex-col gap-4">
-      <Button className="max-w-fit" onPress={onOpen}>
-        Open Modal
-      </Button>
-
-      <Modal isOpen={isOpen} placement={modalPlacement} onOpenChange={onOpenChange}>
-        <ModalContent>
-          {(onClose) => (
-            <>
-              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
-              <ModalBody>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non
-                  risus hendrerit venenatis. Pellentesque sit amet hendrerit risus, sed porttitor
-                  quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non
-                  risus hendrerit venenatis. Pellentesque sit amet hendrerit risus, sed porttitor
-                  quam.
-                </p>
-              </ModalBody>
-              <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
-                  Close
-                </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
-                </Button>
-              </ModalFooter>
-            </>
-          )}
-        </ModalContent>
-      </Modal>
-    </div>
-  );
-}
 
 
 // Data View Sidebar Component (Positioned on the Left)
@@ -163,7 +108,6 @@ const DataSidebar = ({
   onToggle,
   nodes = [],
   edges = [],
-  logs: incomingLogs,
   onDownload
 }) => {
   // ---- Safe style fallbacks (no Tailwind) ----
@@ -216,11 +160,6 @@ const DataSidebar = ({
     },
     [nodes]
   );
-
-  const [logsMap, setLogsMap] = React.useState(() => buildLogsMap(incomingLogs));
-  React.useEffect(() => {
-    setLogsMap(buildLogsMap(incomingLogs));
-  }, [incomingLogs, buildLogsMap]);
 
   // ---- Utilities ----
   const flatten = (obj, parentKey = "", res = {}) => {
@@ -439,6 +378,7 @@ const DataSidebar = ({
 
 
 
+
 const QDash = (callback, deps) => {
   const [nodes, setNodes] = useState([]);
   const [historyNodes, setHistoryNodes] = useState([]);
@@ -454,7 +394,6 @@ const QDash = (callback, deps) => {
   const [isDataSidebarOpen, setIsDataSidebarOpen] = useState(false);
   const [tableData, setTableData] = useState([]);
   const [isTraining, setIsTraining] = useState(false);
-  const [logge, setLoggs] = useState({err:[], out:[]});
   const [userId, setUserId] = useState(randomId());
 
   const updateHistoryNodes = (data) =>  {
@@ -555,6 +494,8 @@ const QDash = (callback, deps) => {
           credential: fbCreds.creds,
           databaseURL: fbCreds.db_path
         });
+        console.error('Firebase-Initialisierung erfolgreich');
+
         firebaseDb.current = getDatabase(firebaseApp.current);
         setfbIsConnected(true);
       } catch (e) {
@@ -570,7 +511,6 @@ const QDash = (callback, deps) => {
     const nodeId = snapshot.key;
 
     if (!changedData) return;
-
 
     if ("session_id" in changedData && !"src" in changedData) {
       // history node change
@@ -726,11 +666,23 @@ const QDash = (callback, deps) => {
         onDownload={() => downloadTableDataCSV(tableData, 'table_data.csv')}
         nodes={historyNodes}
         edges={historyEdges}
-        logs={logge}
       />
     )
-  }, [historyNodes, historyEdges, logge, isDataSidebarOpen]);
+  }, [historyNodes, historyEdges, isDataSidebarOpen]);
 
+  const nodeSection = useCallback(() => {
+    console.log("selectedNode, firebaseDb,fbIsConnected", selectedNode, firebaseDb,fbIsConnected)
+    return(
+      <NodeInfoPanel
+        node={selectedNode}
+        onClose={() => setSelectedNode(null)}
+        onDownloadSingle={handleDownloadLogs}
+        onDownloadAll={handleDownloadAllLogs}
+        firebaseDb={firebaseDb}
+        fbIsConnected={fbIsConnected}
+      />
+    )
+  },[selectedNode, firebaseDb,fbIsConnected]);
 
 
   return (
@@ -761,9 +713,11 @@ const QDash = (callback, deps) => {
           </div>
       </div>
 
-      <NodeInfoPanel node={selectedNode} logs={nodeLogs} onClose={() => setSelectedNode(null)} onDownloadSingle={handleDownloadLogs} onDownloadAll={handleDownloadAllLogs} />
+      {nodeSection()}
+
     </div>
   );
 };
 
 export default QDash;
+// nichts darf deine gefühle beeinflussen (negativ oder positiv)

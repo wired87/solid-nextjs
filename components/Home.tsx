@@ -1,5 +1,3 @@
-import FunFact from "@/components/FunFact";
-import {factDataHome} from "@/components/FunFact/factData";
 import Feature from "@/components/Features";
 import {aiFeatures} from "@/components/Features/featuresData";
 import CTA from "@/components/CTA";
@@ -26,7 +24,6 @@ const HomeMain = () => {
       <CTA />
       <Integration />
       <HomeBot />
-
       <Contact />
     </div>
   );

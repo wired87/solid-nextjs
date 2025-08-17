@@ -16,7 +16,6 @@ const Footer = () => {
                     opacity: 0,
                     y: -20,
                   },
-
                   visible: {
                     opacity: 1,
                     y: 0,
@@ -28,9 +27,6 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="animate_top w-1/2 lg:w-1/4"
               >
-
-
-
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
                   contact
                 </p>
